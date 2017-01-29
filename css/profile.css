@@ -1,30 +1,36 @@
 @font-face {
-    font-family: 'PTSansCaption';
-    src: url('../custom_font/PTC55F_W.eot');
-    src:
-            url('../custom_font/PTC55F_W.eot?#iefix') format('embedded-opentype'),
-            url('../custom_font/PTC55F_W.woff') format('woff'),
-            url('../custom_font/PTC55F_W.ttf') format('truetype'),
-            url('../custom_font/PTC55F_W.svg#PTSans-Caption') format('svg');
+    font-family: 'open_sanslight';
+    src: url('../custom_font/opensans-webfont.woff2') format('woff2'),
+    url('../custom_font/opensans-webfont.woff') format('woff'),
+    url('../custom_font/opensans-webfont.ttf') format('truetype');
+    url('../custom_font/../custom_font/opensans-webfont.eot') format('eot');
     font-weight: normal;
     font-style: normal;
+
 }
 body {
+    font-family: 'open_sanslight';
     background-color: #d9dbdd;
     margin: 0;
 }
 .container {
     background-color: #fff;
     width: 980px;
-    height: 626px;
-    margin: 50px auto 50px;
+    height: 557px;
+    margin: 50px auto;
 }
 .avatar-and-left-sidebar{
     width: 280px;
     height: 626px;
+    float: left;
 }
-.main-content{
+.content-container{
+    padding: 21px 30px 0 27px;
+}
+.content {
     width: 700px;
+    height: 605px;
+    float: left;
 }
 .avatar-bg{
     width: 280px;
@@ -45,4 +51,126 @@ body {
 .avatar-photo img {
     border-radius: 50%;
     border: 10px solid rgba(204, 204, 204, 0.2);
+}
+a.tablink {
+    text-decoration: none;
+    font-size: 17px;
+}
+#profile-tab, #work-tab, #resume-tab, #blog-tab, #contact-tab,
+#profile-tab-img, #work-tab-img, #resume-tab-img, #blog-tab-img, #contact-tab-img {
+    display: inline-block;
+}
+#profile-tab, #work-tab, #resume-tab, #blog-tab, #contact-tab {
+    width: 77%;
+    text-align: right;
+    vertical-align: middle;
+    color: #d1d1d1;
+}
+#profile-tab-img, #work-tab-img, #resume-tab-img, #blog-tab-img, #contact-tab-img {
+    width: 51px;
+    text-align: center;
+}
+#profile-tab-img img, #work-tab-img img, #resume-tab-img img, #blog-tab-img img, #contact-tab-img img {
+    vertical-align: middle;
+}
+.tabs {
+    padding: 23px 0;
+    border-bottom: 1px solid #222b2e;
+    background-color: #2b373b;
+}
+.tab-active div{
+    background-color: #ffd42d;
+
+}
+.tab-active .tabs #profile-tab, .tab-active .tabs #work-tab,
+.tab-active .tabs #resume-tab, .tab-active .tabs #blog-tab, .tab-active .tabs #contact-tab {
+    color: #2b373b;
+}
+.tab-active .tabs {
+    border-color: #ccaa24;
+}
+.welcome-text {
+    width: 500px;
+}
+.welcome-text, .welcome-text-name {
+    display: inline-block;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #6b6b6b;
+}
+.welcome-text-name {
+    font-weight: 900;
+    color: #000;
+}
+#border-under-welcome-text {
+    height: 20px;
+    width: 70px;
+    border-bottom: 3px solid #ffd42d;
+    margin-left: 2px;
+    margin-bottom: 23px;
+}
+.exp-text {
+    margin-left: 2px;
+    line-height: 1.7;
+    width: 617px;
+    text-align: justify;
+}
+#border-under-exp-text {
+    height: 22px;
+    width: 640px;
+    border-bottom: 1px solid #ededed;
+    margin-left: 2px;
+    margin-bottom: 15px;
+}
+.pt-title {
+    font-size: 24px;
+    color: #2c383c;
+    margin-left: 2px
+}
+#border-under-pi-title {
+    height: 12px;
+    width: 50px;
+    border-bottom: 6px solid #ffd42d;
+    margin-bottom: 20px;
+    margin-left: 4px;
+}
+.label-data-inputs {
+    border: 1px solid #ededed;
+    padding: 7px 16px 10px 15px;
+    margin-left: 3px;
+}
+.data-text-inputs {
+    padding: 12px 14px;
+    border: 1px solid #ededed;
+    background-color: #f6f6f6;
+}
+.data-inputs {
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+#footer {
+    height: 69px;
+    width: 100%;
+    background-color: #f1f1f1;
+    float: left;
+    margin-bottom: 50px;
+}
+.data-inputs.last {
+    margin-bottom: 35px;
+}
+#copyright {
+    padding-left: 30px;
+    padding-top: 25px;
+    font-size: 14px;
+    float: left;
+}
+.social-icons {
+    float: right;
+    padding-top: 25px;
+    padding-right: 22px;
+}
+#facebook, #twitter, #drib, #pin {
+    display: inline-block;
+    padding-right: 11px;
 }
