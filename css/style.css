@@ -14,9 +14,9 @@ body {
     margin: 0;
 }
 .container {
-    background-color: #fff;
     width: 980px;
-    height: 557px;
+    min-height: 557px;
+    height: auto;
     margin: 50px auto;
 }
 .avatar-and-left-sidebar{
@@ -24,13 +24,18 @@ body {
     height: 626px;
     float: left;
 }
-.content-container{
+.content-container, .content-container-work{
     padding: 21px 30px 0 27px;
 }
-.content {
+.content, .content-work {
+    background-color: #fff;
     width: 700px;
-    height: 605px;
+    min-height: 605px;
+    height: auto;
     float: left;
+}
+.content-work {
+    height: auto;
 }
 .avatar-bg{
     width: 280px;
@@ -56,6 +61,7 @@ a.tablink {
     text-decoration: none;
     font-size: 17px;
 }
+/**************Profile Layout and Left Sidebar************************/
 #profile-tab, #work-tab, #resume-tab, #blog-tab, #contact-tab,
 #profile-tab-img, #work-tab-img, #resume-tab-img, #blog-tab-img, #contact-tab-img {
     display: inline-block;
@@ -92,13 +98,13 @@ a.tablink {
 .welcome-text {
     width: 500px;
 }
-.welcome-text, .welcome-text-name {
+.welcome-text, .welcome-text-name, .work-title {
     display: inline-block;
     font-size: 32px;
     line-height: 1.2;
     color: #6b6b6b;
 }
-.welcome-text-name {
+.welcome-text-name, .work-title {
     font-weight: 900;
     color: #000;
 }
@@ -173,4 +179,23 @@ a.tablink {
 #facebook, #twitter, #drib, #pin {
     display: inline-block;
     padding-right: 11px;
+}
+/***************Work Layout*********************/
+.work-title, #text-top-right-navigation, .navigation-arrow {
+    display: inline-block;
+}
+.top-right-navigation {
+    float: right;
+}
+#text-top-right-navigation, #left-arrow, #right-arrow {
+    vertical-align: middle;
+}
+.navigation-arrow {
+    padding-left: 20px;
+}
+#left-arrow {
+    padding-right: 2px;
+}
+#right-arrow {
+    padding-left: 2px;
 }
