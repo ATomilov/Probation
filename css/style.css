@@ -35,7 +35,7 @@ body {
 .avatar-bg{
     width: 280px;
     height: 266px;
-    background-image: url("../img/profile/left-bground.png");
+    background-image: url("../img/left-bground.png");
     position: relative;
 }
 .avatar-photo{
