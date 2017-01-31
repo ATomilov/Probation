@@ -8,6 +8,17 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../custom_font/opbold-webfont.woff2') format('woff2'),
+    url('../custom_font/../custom_font/opbold-webfont.eot') format('eot'),
+    url('../custom_font/../custom_font/opbold-webfont.woff') format('woff'),
+    url('../custom_font/../custom_font/opbold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
 body {
     font-family: 'open_sanslight';
     background-color: #d9dbdd;
@@ -103,6 +114,9 @@ a.tablink {
     font-size: 32px;
     line-height: 1.2;
     color: #6b6b6b;
+}
+.welcome-text-name, .work-title {
+    font-family: 'open_sansbold' !important;
 }
 .welcome-text-name, .work-title {
     font-weight: 900;
