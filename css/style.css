@@ -200,9 +200,13 @@ a.tablink {
 }
 .top-right-navigation {
     float: right;
+    padding-top: 9px;
 }
 #text-top-right-navigation, #left-arrow, #right-arrow {
     vertical-align: middle;
+}
+#text-top-right-navigation {
+    font-size: 13px;
 }
 .navigation-arrow {
     padding-left: 20px;
@@ -212,4 +216,50 @@ a.tablink {
 }
 #right-arrow {
     padding-left: 2px;
+}
+.work-title {
+    padding-top: 4px;
+    letter-spacing: -1px;
+}
+.border-under-work-title {
+    width: 100%;
+    height: 27px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 30px;
+}
+.grid-work-all, #grid-icon-in-work, .grid-work-all-text, .grid-work-branding, .grid-work-illustrations, .grid-work-logos, .grid-work-photography,
+.grid-work-wallpapers {
+    display: inline-block;
+}
+.grid-work-menu-list {
+    margin-left: 4px;
+    font-size: 14px;
+    margin-bottom: 29px;
+}
+.grid-work-all {
+    padding: 8px 12px 8px 12px;
+    background-color: #ffd42d;
+}
+#grid-icon-in-work {
+    vertical-align: sub;
+    margin-right: 6px;
+}
+.grid-work-branding {
+    margin-left: 11px;
+}
+.grid-work-wallpapers {
+    margin-left: 22px;
+}
+.grid-work-photography {
+    margin-left: 23px;
+}
+.grid-work-illustrations {
+    margin-left: 23px;
+}
+.grid-work-logos {
+    margin-left: 24px;
+}
+a.filter-portfolio {
+    text-decoration: none;
+    color: #b1b1b1;
 }
