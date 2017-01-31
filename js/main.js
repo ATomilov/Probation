@@ -86,6 +86,24 @@ jQuery(function ($) {
                 $('#contact-tab-img img').attr('src', './img/contact_gray.png');
             }
         });
+        $('#all-click').click(function () {
+            $('.grid-work-items').isotope({filter: '*', layoutMode: 'fitRows'});
+        });
+        $('#branding-click').click(function () {
+            $('.grid-work-items').isotope({ filter: '.branding', layoutMode: 'fitRows'});
+        });
+        $('#wallpapers-click').click(function () {
+            $('.grid-work-items').isotope({ filter: '.wallpapers', layoutMode: 'fitRows'});
+        });
+        $('#photography-click').click(function () {
+            $('.grid-work-items').isotope({ filter: '.photography', layoutMode: 'fitRows'});
+        });
+        $('#illustrations-click').click(function () {
+            $('.grid-work-items').isotope({ filter: '.illustrations', layoutMode: 'fitRows'});
+        });
+        $('#logos-click').click(function () {
+            $('.grid-work-items').isotope({ filter: '.logos', layoutMode: 'fitRows'});
+        });
     });
 });
 

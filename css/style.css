@@ -26,7 +26,7 @@ body {
 }
 .container {
     width: 980px;
-    min-height: 557px;
+    min-height: 626px;
     height: auto;
     margin: 50px auto;
 }
@@ -41,12 +41,16 @@ body {
 .content, .content-work {
     background-color: #fff;
     width: 700px;
-    min-height: 605px;
     height: auto;
     float: left;
 }
 .content-work {
     height: auto;
+}
+.content-container-work {
+    position: relative;
+    padding-bottom: 10px;
+    min-height: 526px;
 }
 .avatar-bg{
     width: 280px;
@@ -174,7 +178,7 @@ a.tablink {
     width: 100%;
     background-color: #f1f1f1;
     float: left;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
 .data-inputs.last {
     margin-bottom: 35px;
@@ -262,4 +266,23 @@ a.tablink {
 a.filter-portfolio {
     text-decoration: none;
     color: #b1b1b1;
+}
+.grid-work-item img {
+    width: 200px;
+    height: auto;
+}
+.grid-work-item {
+    display: inline-block;
+    position: relative;
+    /*float: left;*/
+    padding-bottom: 15px;
+    padding-right: 12px;
+    height: 160px;
+}
+.grid-work-items {
+    /*margin-left: 3px;*/
+}
+.grid-work-item.last {
+    /*float: right;*/
+    padding-right: 0;
 }
