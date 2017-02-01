@@ -229,7 +229,7 @@ a.tablink {
     width: 100%;
     height: 27px;
     border-bottom: 1px solid #ededed;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 }
 .grid-work-all, #grid-icon-in-work, .grid-work-all-text, .grid-work-branding, .grid-work-illustrations, .grid-work-logos, .grid-work-photography,
 .grid-work-wallpapers {
@@ -242,26 +242,34 @@ a.tablink {
 }
 .grid-work-all {
     padding: 8px 12px 8px 12px;
-    background-color: #ffd42d;
 }
 #grid-icon-in-work {
     vertical-align: sub;
-    margin-right: 6px;
+    margin-right: 3px;
 }
 .grid-work-branding {
-    margin-left: 11px;
+    padding: 8px 12px 8px 12px;
+    margin-left: 2px;
 }
 .grid-work-wallpapers {
-    margin-left: 22px;
+    padding: 8px 12px 8px 12px;
+    margin-left: -2px;
 }
 .grid-work-photography {
-    margin-left: 23px;
+    padding: 8px 12px 8px 12px;
+    margin-left: -1px;
 }
 .grid-work-illustrations {
-    margin-left: 23px;
+    padding: 8px 12px 8px 12px;
+    margin-left: -1px;
 }
 .grid-work-logos {
-    margin-left: 24px;
+    padding: 8px 12px 8px 12px;
+    margin-left: -2px;
+}
+.filter-type-active div {
+    background-color: #ffd42d;
+    color: #2c383c!important;
 }
 a.filter-portfolio {
     text-decoration: none;
@@ -276,7 +284,7 @@ a.filter-portfolio {
     position: relative;
     /*float: left;*/
     padding-bottom: 15px;
-    padding-right: 12px;
+    padding-right: 11px;
     height: 160px;
 }
 .grid-work-items {
@@ -284,5 +292,5 @@ a.filter-portfolio {
 }
 .grid-work-item.last {
     /*float: right;*/
-    padding-right: 0;
+    /*padding-right: 0;*/
 }

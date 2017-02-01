@@ -88,21 +88,69 @@ jQuery(function ($) {
         });
         $('#all-click').click(function () {
             $('.grid-work-items').isotope({filter: '*', layoutMode: 'fitRows'});
+            $(this).addClass('filter-type-active');
+            if ( $(this).hasClass('filter-type-active') ) {
+                $('#branding-click').removeClass('filter-type-active');
+                $('#wallpapers-click').removeClass('filter-type-active');
+                $('#photography-click').removeClass('filter-type-active');
+                $('#illustrations-click').removeClass('filter-type-active');
+                $('#logos-click').removeClass('filter-type-active');
+            }
         });
         $('#branding-click').click(function () {
             $('.grid-work-items').isotope({ filter: '.branding', layoutMode: 'fitRows'});
+            $(this).addClass('filter-type-active');
+            if ( $(this).hasClass('filter-type-active') ) {
+                $('#all-click').removeClass('filter-type-active');
+                $('#wallpapers-click').removeClass('filter-type-active');
+                $('#photography-click').removeClass('filter-type-active');
+                $('#illustrations-click').removeClass('filter-type-active');
+                $('#logos-click').removeClass('filter-type-active');
+            }
         });
         $('#wallpapers-click').click(function () {
             $('.grid-work-items').isotope({ filter: '.wallpapers', layoutMode: 'fitRows'});
+            $(this).addClass('filter-type-active');
+            if ( $(this).hasClass('filter-type-active') ) {
+                $('#branding-click').removeClass('filter-type-active');
+                $('#all-click').removeClass('filter-type-active');
+                $('#photography-click').removeClass('filter-type-active');
+                $('#illustrations-click').removeClass('filter-type-active');
+                $('#logos-click').removeClass('filter-type-active');
+            }
         });
         $('#photography-click').click(function () {
             $('.grid-work-items').isotope({ filter: '.photography', layoutMode: 'fitRows'});
+            $(this).addClass('filter-type-active');
+            if ( $(this).hasClass('filter-type-active') ) {
+                $('#branding-click').removeClass('filter-type-active');
+                $('#wallpapers-click').removeClass('filter-type-active');
+                $('#all-click').removeClass('filter-type-active');
+                $('#illustrations-click').removeClass('filter-type-active');
+                $('#logos-click').removeClass('filter-type-active');
+            }
         });
         $('#illustrations-click').click(function () {
             $('.grid-work-items').isotope({ filter: '.illustrations', layoutMode: 'fitRows'});
+            $(this).addClass('filter-type-active');
+            if ( $(this).hasClass('filter-type-active') ) {
+                $('#branding-click').removeClass('filter-type-active');
+                $('#wallpapers-click').removeClass('filter-type-active');
+                $('#all-click').removeClass('filter-type-active');
+                $('#photography-click').removeClass('filter-type-active');
+                $('#logos-click').removeClass('filter-type-active');
+            }
         });
         $('#logos-click').click(function () {
             $('.grid-work-items').isotope({ filter: '.logos', layoutMode: 'fitRows'});
+            $(this).addClass('filter-type-active');
+            if ( $(this).hasClass('filter-type-active') ) {
+                $('#branding-click').removeClass('filter-type-active');
+                $('#wallpapers-click').removeClass('filter-type-active');
+                $('#all-click').removeClass('filter-type-active');
+                $('#photography-click').removeClass('filter-type-active');
+                $('#illustrations-click').removeClass('filter-type-active');
+            }
         });
     });
 });
