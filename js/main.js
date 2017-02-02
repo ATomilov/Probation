@@ -155,6 +155,7 @@ jQuery(function ($) {
         // $('.services-item-with-title:nth-child(1)').hover(function () {
         //     $('.services-item-with-title:nth-child(1) .services-item-title').css('color', '#fff');
         // });
+        $(".standart-post-image").owlCarousel();
     });
 });
 
