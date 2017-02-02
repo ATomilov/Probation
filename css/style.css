@@ -342,3 +342,39 @@ a.filter-portfolio {
 .border-under-education-item.last {
     margin-bottom: 26px;
 }
+.progress-bar-title, .progress-bar-percent {
+    display: inline-block;
+}
+.progress-bar-title {
+    font-size: 13px;
+    padding-left: 4px;
+}
+.progress-bar-percent {
+    float: right;
+    font-size: 13px;
+    padding-top: 4px;
+    font-weight: bold;
+}
+.progress-bar-title-and-percent {
+    padding-bottom: 5px;
+}
+.progress-bar {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ededed;
+}
+
+.progress-bar-fill {
+    display: block;
+    height: 19px;
+    background-color: #ffd42d;
+}
+#border-under-skills-title {
+    margin-bottom: 23px;
+}
+.progress-bar-with-title {
+    padding-bottom: 3px;
+}
+.progress-bar-with-title.last {
+    padding-bottom: 10px;
+}
