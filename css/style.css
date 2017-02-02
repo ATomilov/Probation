@@ -151,7 +151,8 @@ a.tablink {
     color: #2c383c;
     margin-left: 2px
 }
-#border-under-pi-title, #border-under-ed-title, #border-under-skills-title {
+#border-under-pi-title, #border-under-ed-title, #border-under-skills-title,
+#border-under-services-title, #border-under-work-exp-title {
     height: 12px;
     width: 50px;
     border-bottom: 6px solid #ffd42d;
@@ -161,6 +162,12 @@ a.tablink {
     margin-bottom: 20px;
 }
 #border-under-ed-title {
+    margin-bottom: 26px;
+}
+#border-under-services-title {
+    margin-bottom: 24px;
+}
+#border-under-work-exp-title {
     margin-bottom: 26px;
 }
 .label-data-inputs {
@@ -314,6 +321,9 @@ a.filter-portfolio {
 .education-item {
     margin-left: 3px;
 }
+.education-item.last {
+    margin-bottom: 15px;
+}
 .education-item-title {
     font-family: 'open_sansbold';
     padding-bottom: 7px;
@@ -340,7 +350,7 @@ a.filter-portfolio {
     margin-bottom: 19px;
 }
 .border-under-education-item.last {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
 }
 .progress-bar-title, .progress-bar-percent {
     display: inline-block;
@@ -377,4 +387,37 @@ a.filter-portfolio {
 }
 .progress-bar-with-title.last {
     padding-bottom: 10px;
+}
+.services-items {
+    text-align: center;
+}
+.services-item-title {
+    color: #c0c0c0;
+    text-align: center;
+    font-size: 18px;
+}
+.border-under-services-item-image {
+    width: 49px;
+    height: 10px;
+    border-bottom: 1px solid #c0c0c0;
+    margin: 0 auto;
+    padding-top: 18px;
+    margin-bottom: 14px;
+}
+.services-item-with-title {
+    display: inline-block;
+    padding: 40px 50px 40px 50px;
+    width: 104px;
+    height: 101px;
+    vertical-align: top;
+}
+.services-item-image {
+    text-align: center;
+}
+.services-item-image img {
+    vertical-align: middle;
+}
+.services-item-with-title:hover {
+    background-color: #ffd42d;
+    font-weight: bold;
 }

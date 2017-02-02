@@ -152,6 +152,9 @@ jQuery(function ($) {
                 $('#illustrations-click').removeClass('filter-type-active');
             }
         });
+        // $('.services-item-with-title:nth-child(1)').hover(function () {
+        //     $('.services-item-with-title:nth-child(1) .services-item-title').css('color', '#fff');
+        // });
     });
 });
 
