@@ -1,161 +1,123 @@
 
 jQuery(function ($) {
     $(document).ready(function () {
-        $('#profile-click').click(function () {
+        $('.profile-click').click(function () {
            $(this).addClass('tab-active');
            if ( $(this).hasClass('tab-active') ) {
-               $('#profile-tab-img img').attr('src', './img/profile.png');
-               $('#work-click').removeClass('tab-active');
-               $('#work-tab-img img').attr('src', './img/work_gray.png');
-               $('#resume-click').removeClass('tab-active');
-               $('#resume-tab-img img').attr('src', './img/resume_gray.png');
-               $('#blog-click').removeClass('tab-active');
-               $('#blog-tab-img img').attr('src', './img/blog_gray.png');
-               $('#contact-click').removeClass('tab-active');
-               $('#contact-tab-img img').attr('src', './img/contact_gray.png');
-           }
-           else {
-               $('#profile-tab-img img').attr('src', './img/profile/profile_gray.png');
+               $('.work-click').removeClass('tab-active');
+               $('.resume-click').removeClass('tab-active');
+               $('.blog-click').removeClass('tab-active');
+               $('.contact-click').removeClass('tab-active');
            }
         });
-        $('#work-click').click(function () {
+        $('.work-click').click(function () {
             $(this).addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
-                $('#work-tab-img img').attr('src', './img/work.png');
-                $('#profile-click').removeClass('tab-active');
-                $('#profile-tab-img img').attr('src', './img/profile_gray.png');
-                $('#resume-click').removeClass('tab-active');
-                $('#resume-tab-img img').attr('src', './img/resume_gray.png');
-                $('#blog-click').removeClass('tab-active');
-                $('#blog-tab-img img').attr('src', './img/blog_gray.png');
-                $('#contact-click').removeClass('tab-active');
-                $('#contact-tab-img img').attr('src', './img/contact_gray.png');
-            }
-            else {
-                $('#work-tab-img img').attr('src', './img/profile/work_gray.png');
+                $('.profile-click').removeClass('tab-active');
+                $('.resume-click').removeClass('tab-active');
+                $('.blog-click').removeClass('tab-active');
+                $('.contact-click').removeClass('tab-active');
             }
         });
-        $('#resume-click').click(function () {
+        $('.resume-click').click(function () {
             $(this).addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
-                $('#resume-tab-img img').attr('src', './img/resume.png');
-                $('#work-click').removeClass('tab-active');
-                $('#work-tab-img img').attr('src', './img/work_gray.png');
-                $('#profile-click').removeClass('tab-active');
-                $('#profile-tab-img img').attr('src', './img/profile_gray.png');
-                $('#blog-click').removeClass('tab-active');
-                $('#blog-tab-img img').attr('src', './img/blog_gray.png');
-                $('#contact-click').removeClass('tab-active');
-                $('#contact-tab-img img').attr('src', './img/contact_gray.png');
-            }
-            else {
-                $('#resume-tab-img img').attr('src', './img/resume_gray.png');
+                $('.work-click').removeClass('tab-active');
+                $('.profile-click').removeClass('tab-active');
+                $('.blog-click').removeClass('tab-active');
+                $('.contact-click').removeClass('tab-active');
             }
         });
-        $('#blog-click').click(function () {
+        $('.blog-click').click(function () {
             $(this).addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
-                $('#blog-tab-img img').attr('src', './img/blog.png');
-                $('#work-click').removeClass('tab-active');
-                $('#work-tab-img img').attr('src', './img/work_gray.png');
-                $('#profile-click').removeClass('tab-active');
-                $('#profile-tab-img img').attr('src', './img/profile_gray.png');
-                $('#resume-click').removeClass('tab-active');
-                $('#resume-tab-img img').attr('src', './img/resume_gray.png');
-                $('#contact-click').removeClass('tab-active');
-                $('#contact-tab-img img').attr('src', './img/contact_gray.png');
-            }
-            else {
-                $('#blog-tab-img img').attr('src', './img/blog_gray.png');
+                $('.work-click').removeClass('tab-active');
+                $('.profile-click').removeClass('tab-active');
+                $('.resume-click').removeClass('tab-active');
+                $('.contact-click').removeClass('tab-active');
             }
         });
-        $('#contact-click').click(function () {
+        $('.contact-click').click(function () {
             $(this).addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
-                $('#contact-tab-img img').attr('src', './img/contact.png');
-                $('#work-click').removeClass('tab-active');
-                $('#work-tab-img img').attr('src', './img/work_gray.png');
-                $('#profile-click').removeClass('tab-active');
-                $('#profile-tab-img img').attr('src', './img/profile_gray.png');
-                $('#resume-click').removeClass('tab-active');
-                $('#resume-tab-img img').attr('src', './img/resume_gray.png');
-                $('#blog-click').removeClass('tab-active');
-                $('#blog-tab-img img').attr('src', './img/blog_gray.png');
-            }
-            else {
-                $('#contact-tab-img img').attr('src', './img/contact_gray.png');
+                $('.work-click').removeClass('tab-active');
+                $('.profile-click').removeClass('tab-active');
+                $('.resume-click').removeClass('tab-active');
+                $('.blog-click').removeClass('tab-active');
             }
         });
-        $('#all-click').click(function () {
+        $('.all-click').click(function () {
             $('.grid-work-items').isotope({filter: '*', layoutMode: 'fitRows'});
             $(this).addClass('filter-type-active');
             if ( $(this).hasClass('filter-type-active') ) {
-                $('#branding-click').removeClass('filter-type-active');
-                $('#wallpapers-click').removeClass('filter-type-active');
-                $('#photography-click').removeClass('filter-type-active');
-                $('#illustrations-click').removeClass('filter-type-active');
-                $('#logos-click').removeClass('filter-type-active');
+                $('.branding-click').removeClass('filter-type-active');
+                $('.wallpapers-click').removeClass('filter-type-active');
+                $('.photography-click').removeClass('filter-type-active');
+                $('.illustrations-click').removeClass('filter-type-active');
+                $('.logos-click').removeClass('filter-type-active');
             }
         });
-        $('#branding-click').click(function () {
+        $('.branding-click').click(function () {
             $('.grid-work-items').isotope({ filter: '.branding', layoutMode: 'fitRows'});
+            $('.grid-work-items').removeClass('last');
             $(this).addClass('filter-type-active');
             if ( $(this).hasClass('filter-type-active') ) {
-                $('#all-click').removeClass('filter-type-active');
-                $('#wallpapers-click').removeClass('filter-type-active');
-                $('#photography-click').removeClass('filter-type-active');
-                $('#illustrations-click').removeClass('filter-type-active');
-                $('#logos-click').removeClass('filter-type-active');
+                $('.all-click').removeClass('filter-type-active');
+                $('.wallpapers-click').removeClass('filter-type-active');
+                $('.photography-click').removeClass('filter-type-active');
+                $('.illustrations-click').removeClass('filter-type-active');
+                $('.logos-click').removeClass('filter-type-active');
             }
         });
-        $('#wallpapers-click').click(function () {
+        $('.wallpapers-click').click(function () {
             $('.grid-work-items').isotope({ filter: '.wallpapers', layoutMode: 'fitRows'});
+            $('.grid-work-items').removeClass('last');
             $(this).addClass('filter-type-active');
             if ( $(this).hasClass('filter-type-active') ) {
-                $('#branding-click').removeClass('filter-type-active');
-                $('#all-click').removeClass('filter-type-active');
-                $('#photography-click').removeClass('filter-type-active');
-                $('#illustrations-click').removeClass('filter-type-active');
-                $('#logos-click').removeClass('filter-type-active');
+                $('.branding-click').removeClass('filter-type-active');
+                $('.all-click').removeClass('filter-type-active');
+                $('.photography-click').removeClass('filter-type-active');
+                $('.illustrations-click').removeClass('filter-type-active');
+                $('.logos-click').removeClass('filter-type-active');
             }
         });
-        $('#photography-click').click(function () {
+        $('.photography-click').click(function () {
             $('.grid-work-items').isotope({ filter: '.photography', layoutMode: 'fitRows'});
+            $('.grid-work-items').removeClass('last');
             $(this).addClass('filter-type-active');
             if ( $(this).hasClass('filter-type-active') ) {
-                $('#branding-click').removeClass('filter-type-active');
-                $('#wallpapers-click').removeClass('filter-type-active');
-                $('#all-click').removeClass('filter-type-active');
-                $('#illustrations-click').removeClass('filter-type-active');
-                $('#logos-click').removeClass('filter-type-active');
+                $('.branding-click').removeClass('filter-type-active');
+                $('.wallpapers-click').removeClass('filter-type-active');
+                $('.all-click').removeClass('filter-type-active');
+                $('.illustrations-click').removeClass('filter-type-active');
+                $('.logos-click').removeClass('filter-type-active');
             }
         });
-        $('#illustrations-click').click(function () {
+        $('.illustrations-click').click(function () {
             $('.grid-work-items').isotope({ filter: '.illustrations', layoutMode: 'fitRows'});
+            $('.grid-work-items').removeClass('last');
             $(this).addClass('filter-type-active');
             if ( $(this).hasClass('filter-type-active') ) {
-                $('#branding-click').removeClass('filter-type-active');
-                $('#wallpapers-click').removeClass('filter-type-active');
-                $('#all-click').removeClass('filter-type-active');
-                $('#photography-click').removeClass('filter-type-active');
-                $('#logos-click').removeClass('filter-type-active');
+                $('.branding-click').removeClass('filter-type-active');
+                $('.wallpapers-click').removeClass('filter-type-active');
+                $('.all-click').removeClass('filter-type-active');
+                $('.photography-click').removeClass('filter-type-active');
+                $('.logos-click').removeClass('filter-type-active');
             }
         });
-        $('#logos-click').click(function () {
+        $('.logos-click').click(function () {
             $('.grid-work-items').isotope({ filter: '.logos', layoutMode: 'fitRows'});
+            $('.grid-work-items').removeClass('last');
             $(this).addClass('filter-type-active');
             if ( $(this).hasClass('filter-type-active') ) {
-                $('#branding-click').removeClass('filter-type-active');
-                $('#wallpapers-click').removeClass('filter-type-active');
-                $('#all-click').removeClass('filter-type-active');
-                $('#photography-click').removeClass('filter-type-active');
-                $('#illustrations-click').removeClass('filter-type-active');
+                $('.branding-click').removeClass('filter-type-active');
+                $('.wallpapers-click').removeClass('filter-type-active');
+                $('.all-click').removeClass('filter-type-active');
+                $('.photography-click').removeClass('filter-type-active');
+                $('.illustrations-click').removeClass('filter-type-active');
             }
         });
-        // $('.services-item-with-title:nth-child(1)').hover(function () {
-        //     $('.services-item-with-title:nth-child(1) .services-item-title').css('color', '#fff');
-        // });
-        $(".standart-post-image").owlCarousel();
+        $('.standart-post-image').owlCarousel();
     });
 });
 

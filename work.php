@@ -11,6 +11,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/isotope.pkgd.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
@@ -23,88 +24,40 @@
 
 <!-- Add your site or application content here -->
 <div class="container">
-    <div class="avatar-and-left-sidebar">
-        <div class="avatar-bg">
-            <div class="avatar-photo">
-                <img src="./img/test.png">
-            </div>
-        </div>
-        <nav class="left-sidebar">
-            <a id="profile-click" href="javascript:void(0)" class="tablink">
-                <div class="tabs">
-                    <div id="profile-tab">Profile</div>
-                    <div id="profile-tab-img">
-                        <img src="./img/profile_gray.png">
-                    </div>
-                </div>
-            </a>
-            <a id="work-click" href="javascript:void(0)" class="tablink">
-                <div class="tabs">
-                    <div id="work-tab">Work</div>
-                    <div id="work-tab-img">
-                        <img src="./img/work_gray.png">
-                    </div>
-                </div>
-            </a>
-            <a id="resume-click" href="javascript:void(0)" class="tablink">
-                <div class="tabs">
-                    <div id="resume-tab">Resume</div>
-                    <div id="resume-tab-img">
-                        <img src="./img/resume_gray.png">
-                    </div>
-                </div>
-            </a>
-            <a id="blog-click" href="javascript:void(0)" class="tablink">
-                <div class="tabs">
-                    <div id="blog-tab">Blog</div>
-                    <div id="blog-tab-img">
-                        <img src="./img/blog_gray.png">
-                    </div>
-                </div>
-            </a>
-            <a id="contact-click" href="javascript:void(0)" class="tablink">
-                <div class="tabs">
-                    <div id="contact-tab">Contact</div>
-                    <div id="contact-tab-img">
-                        <img src="./img/contact_gray.png">
-                    </div>
-                </div>
-            </a>
-        </nav>
-    </div>
+    <?php include './left-sidebar.php'?>
         <div class="content-work">
             <div class="content-container-work">
-                <div id="work-content">
+                <div class="work-content">
                     <div class="work-title">PORTFOLIO</div>
                     <div class="top-right-navigation">
-                        <div id="text-top-right-navigation">Go to next / previous page</div>
+                        <div class="text-top-right-navigation">Go to next / previous page</div>
                         <div class="navigation-arrow">
-                            <img id="left-arrow" src="./img/left.png">
-                            <img id="right-arrow" src="./img/right.png">
+                            <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="border-under-work-title"></div>
                     <div class="grid-work">
                         <div class="grid-work-menu-list">
-                            <a id="all-click" href="javascript:void(0)" class="filter-portfolio">
+                            <a class="all-click filter-portfolio" href="javascript:void(0)" class="filter-portfolio">
                                 <div class="grid-work-all">
-                                    <img id="grid-icon-in-work" src="./img/grid.png">
+                                    <img class="grid-icon-in-work" src="./img/grid.png">
                                     <div class="grid-work-all-text">All</div>
                                 </div>
                             </a>
-                            <a id="branding-click" href="javascript:void(0)" class="filter-portfolio">
+                            <a class="branding-click filter-portfolio" href="javascript:void(0)">
                                 <div class="grid-work-branding">Branding</div>
                             </a>
-                            <a id="wallpapers-click" href="javascript:void(0)" class="filter-portfolio">
+                            <a class="wallpapers-click filter-portfolio" href="javascript:void(0)">
                                 <div class="grid-work-wallpapers">Wallpapers</div>
                             </a>
-                            <a id="photography-click" href="javascript:void(0)" class="filter-portfolio">
+                            <a class="photography-click filter-portfolio" href="javascript:void(0)">
                                 <div class="grid-work-photography">Photography</div>
                             </a>
-                            <a id="illustrations-click" href="javascript:void(0)" class="filter-portfolio">
+                            <a class="illustrations-click filter-portfolio" href="javascript:void(0)">
                                 <div class="grid-work-illustrations">Illustrations</div>
                             </a>
-                            <a id="logos-click" href="javascript:void(0)" class="filter-portfolio">
+                            <a class="logos-click filter-portfolio" href="javascript:void(0)">
                                 <div class="grid-work-logos">Logos</div>
                             </a>
                         </div>
@@ -150,32 +103,16 @@
 
                 </div>
             </div>
-            <!--<div id="resume-content">-->
+            <!--<div class="resume-content">-->
 
             <!--</div>-->
-            <!--<div id="blog-content">-->
+            <!--<div class="blog-content">-->
 
             <!--</div>-->
-            <!--<div id="contact-content">-->
+            <!--<div class="contact-content">-->
 
             <!--</div>-->
-            <div id="footer">
-                <div id="copyright">© 2014 Robb Armstrong,  All Rights Reserved</div>
-                <div class="social-icons">
-                    <div id="facebook">
-                        <img src="./img/fb.png">
-                    </div>
-                    <div id="twitter">
-                        <img src="./img/tw.png">
-                    </div>
-                    <div id="drib">
-                        <img src="./img/drib.png">
-                    </div>
-                    <div id="pin">
-                        <img src="./img/pin.png">
-                    </div>
-                </div>
-            </div>
+            <?php include './footer.php'?>
         </div>
     </div>
 
