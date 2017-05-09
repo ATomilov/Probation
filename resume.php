@@ -42,12 +42,10 @@
                 <div class="education-item">
                     <div class="education-item-title">Academy of Art University</div>
                     <div class="education-item-date-and-calendar">
-                        <div class="education-item-calendar">
-                            <img src="./img/calendar.png">
-                        </div>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
                         <div class="education-item-date">2001 - 2004</div>
                     </div>
-                    <div class="education-item-description">Academy of Art University’s School of
+                    <div class="education-item-description">Academy of Art University's School of
                         Web Design & New Media is the intersection between traditional design
                         and new technologies.
                     </div>
@@ -56,9 +54,7 @@
                 <div class="education-item">
                     <div class="education-item-title">IT Technical Institute</div>
                     <div class="education-item-date-and-calendar">
-                        <div class="education-item-calendar">
-                            <img src="./img/calendar.png">
-                        </div>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
                         <div class="education-item-date">2005 - 2008</div>
                     </div>
                     <div class="education-item-description">Information technology (IT) workers can be found
@@ -71,9 +67,7 @@
                 <div class="education-item">
                     <div class="education-item-title">Web Design School</div>
                     <div class="education-item-date-and-calendar">
-                        <div class="education-item-calendar">
-                            <img src="./img/calendar.png">
-                        </div>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
                         <div class="education-item-date">2009 - 2012</div>
                     </div>
                     <div class="education-item-description">This is Photoshop's version  of Lorem Ipsum.
@@ -134,44 +128,32 @@
                 <div class="border-under-services-title"></div>
                 <div class="services-items">
                     <div class="services-item-with-title">
-                        <div class="services-item-image">
-                            <img src="./img/design_gray.png">
-                        </div>
+                        <i class="fa fa-cloud" aria-hidden="true"></i>
                         <div class="border-under-services-item-image"></div>
                         <div class="services-item-title">Design</div>
                     </div>
                     <div class="services-item-with-title">
-                        <div class="services-item-image">
-                            <img src="./img/coding_gray.png">
-                        </div>
+                        <i class="fa fa-meh-o" aria-hidden="true"></i>
                         <div class="border-under-services-item-image"></div>
                         <div class="services-item-title">Coding</div>
                     </div>
                     <div class="services-item-with-title">
-                        <div class="services-item-image">
-                            <img src="./img/responsive_gray.png">
-                        </div>
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
                         <div class="border-under-services-item-image"></div>
                         <div class="services-item-title">Responsive</div>
                     </div>
                     <div class="services-item-with-title">
-                        <div class="services-item-image">
-                            <img src="./img/planing_gray.png">
-                        </div>
+                        <i class="fa fa-text-width" aria-hidden="true"></i>
                         <div class="border-under-services-item-image"></div>
                         <div class="services-item-title">Planing</div>
                     </div>
                     <div class="services-item-with-title">
-                        <div class="services-item-image">
-                            <img src="./img/wordpress_gray.png">
-                        </div>
+                        <i class="fa fa-comment" aria-hidden="true"></i>
                         <div class="border-under-services-item-image"></div>
                         <div class="services-item-title">WordPress</div>
                     </div>
                     <div class="services-item-with-title">
-                        <div class="services-item-image">
-                            <img src="./img/photography_gray.png">
-                        </div>
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
                         <div class="border-under-services-item-image"></div>
                         <div class="services-item-title">Photography</div>
                     </div>
@@ -181,9 +163,7 @@
                 <div class="border-under-work-exp-title"></div>
                 <div class="education-item-title">Graphic River</div>
                 <div class="education-item-date-and-calendar">
-                    <div class="education-item-calendar">
-                        <img src="./img/calendar.png">
-                    </div>
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
                     <div class="education-item-date">2001 - 2004</div>
                 </div>
                 <div class="education-item-description">This is Photoshop's version
@@ -195,9 +175,7 @@
             <div class="education-item">
                 <div class="education-item-title">Video Hive</div>
                 <div class="education-item-date-and-calendar">
-                    <div class="education-item-calendar">
-                        <img src="./img/calendar.png">
-                    </div>
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
                     <div class="education-item-date">2005 - 2008</div>
                 </div>
                 <div class="education-item-description">This is Photoshop's version  of Lorem Ipsum.
@@ -210,9 +188,7 @@
             <div class="education-item last">
                 <div class="education-item-title">Themeforest</div>
                 <div class="education-item-date-and-calendar">
-                    <div class="education-item-calendar">
-                        <img src="./img/calendar.png">
-                    </div>
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
                     <div class="education-item-date">2009 - 2014</div>
                 </div>
                 <div class="education-item-description">This is Photoshop's version

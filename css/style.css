@@ -569,6 +569,19 @@ a.filter-portfolio {
     font-size: 18px;
 }
 
+.fa.fa-cloud,
+.fa.fa-meh-o,
+.fa.fa-desktop,
+.fa.fa-text-width,
+.fa.fa-comment,
+.fa.fa-picture-o {
+    color: #c0c0c0;
+}
+
+.fa.fa-calendar {
+    color: #aaaaaa;
+}
+
 .border-under-services-item-image {
     width: 49px;
     height: 10px;
