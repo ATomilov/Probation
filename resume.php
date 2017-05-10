@@ -158,8 +158,9 @@
                         <div class="services-item-title">Photography</div>
                     </div>
                 </div>
-                <div class="border-under-education-item last"></div>
-                <div class="pt-title">Work Experience</div>
+                <div class="border-under-education-item last services"></div>
+                <div class="pt-title work">Work Experience</div>
+                <div class="education-item">
                 <div class="border-under-work-exp-title"></div>
                 <div class="education-item-title">Graphic River</div>
                 <div class="education-item-date-and-calendar">
@@ -169,6 +170,7 @@
                 <div class="education-item-description">This is Photoshop's version
                     of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
                     Aenean sollicitudin, lorem quis bibendum auctor.
+                </div>
                 </div>
             </div>
             <div class="border-under-education-item"></div>

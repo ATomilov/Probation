@@ -26,7 +26,7 @@
         <a class="blog-click tablink" href="javascript:void(0)">
             <div class="tabs">
                 <div class="blog-tab">Blog</div>
-                <i class="fa fa-comment fa-fw" aria-hidden="true"></i>
+                <i class="fa fa-comment fa-fw blog" aria-hidden="true"></i>
             </div>
         </a>
         <a class="contact-click tablink" href="javascript:void(0)">
