@@ -47,21 +47,15 @@
                         <div class="standart-post-title">Standard Post with Image</div>
                         <div class="standart-post-info">
                             <div class="standart-post-date-and-calendar">
-                                <div class="standart-post-calendar">
-                                    <img src="./img/calendar_post.png">
-                                </div>
+                                <i class="fa fa-calendar-o blog" aria-hidden="true"></i>
                                 <div class="standart-post-date">30 march</div>
                             </div>
                             <div class="standart-post-user-icon-and-nickname">
-                                <div class="standart-post-user-icon">
-                                    <img src="./img/user-icon.png">
-                                </div>
+                                <i class="fa fa-user blog" aria-hidden="true"></i>
                                 <div class="standart-post-nickname">Admin</div>
                             </div>
                             <div class="standart-post-comments">
-                                <div class="standart-post-comments-icon">
-                                    <img src="./img/comments.png">
-                                </div>
+                                <i class="fa fa-comments blog" aria-hidden="true"></i>
                                 <div class="standart-post-number-of-comments">2 comments</div>
                             </div>
                         </div>
@@ -87,21 +81,15 @@
                         <div class="standart-post-title">Gallery Post</div>
                         <div class="standart-post-info">
                             <div class="standart-post-date-and-calendar">
-                                <div class="standart-post-calendar">
-                                    <img src="./img/calendar_post.png">
-                                </div>
+                                <i class="fa fa-calendar-o blog" aria-hidden="true"></i>
                                 <div class="standart-post-date">30 march</div>
                             </div>
                             <div class="standart-post-user-icon-and-nickname">
-                                <div class="standart-post-user-icon">
-                                    <img src="./img/user-icon.png">
-                                </div>
+                                <i class="fa fa-user blog" aria-hidden="true"></i>
                                 <div class="standart-post-nickname">Admin</div>
                             </div>
                             <div class="standart-post-comments">
-                                <div class="standart-post-comments-icon">
-                                    <img src="./img/comments.png">
-                                </div>
+                                <i class="fa fa-comments blog" aria-hidden="true"></i>
                                 <div class="standart-post-number-of-comments">2 comments</div>
                             </div>
                         </div>
@@ -116,8 +104,8 @@
                 </div>
                 <div class="border-post"></div>
                 <div class="link-under-gallery"></div>
-                <div class="border-post"></div>
-                <div class="standart-post-item">
+                <div class="border-post gallery"></div>
+                <div class="standart-post-item last">
                     <div class="standart-post-image">
                         <img src="./img/standart_post_image.png">
                     </div>
@@ -125,21 +113,15 @@
                         <div class="standart-post-title">Another Standard Post</div>
                         <div class="standart-post-info">
                             <div class="standart-post-date-and-calendar">
-                                <div class="standart-post-calendar">
-                                    <img src="./img/calendar_post.png">
-                                </div>
+                                <i class="fa fa-calendar-o blog" aria-hidden="true"></i>
                                 <div class="standart-post-date">30 march</div>
                             </div>
                             <div class="standart-post-user-icon-and-nickname">
-                                <div class="standart-post-user-icon">
-                                    <img src="./img/user-icon.png">
-                                </div>
+                                <i class="fa fa-user blog" aria-hidden="true"></i>
                                 <div class="standart-post-nickname">Admin</div>
                             </div>
                             <div class="standart-post-comments">
-                                <div class="standart-post-comments-icon">
-                                    <img src="./img/comments.png">
-                                </div>
+                                <i class="fa fa-comments blog" aria-hidden="true"></i>
                                 <div class="standart-post-number-of-comments">2 comments</div>
                             </div>
                         </div>

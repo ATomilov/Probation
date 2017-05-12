@@ -109,7 +109,7 @@ input[type=text], textarea {
 }
 
 input[type=text]:hover, textarea:hover {
-    border: 1px solid rgba(52, 152, 219, 1);
+    border: 1px solid #ffd42d;
     -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -117,7 +117,7 @@ input[type=text]:hover, textarea:hover {
 }
 
 input[type=text]:focus, textarea:focus {
-    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    box-shadow: 0 0 5px #ffd42d;
 }
 
 /**************Profile Layout and Left Sidebar************************/
@@ -442,7 +442,8 @@ input.data-text-inputs {
 }
 
 .border-under-blog-title {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    height: 28px;
 }
 
 .grid-work-all,
@@ -703,6 +704,10 @@ a.filter-portfolio {
     display: inline-block;
 }
 
+.blog-title {
+    padding-top: 4px;
+}
+
 .standart-post-title-info-and-description {
     width: 345px;
     padding-left: 21px;
@@ -711,22 +716,47 @@ a.filter-portfolio {
 .standart-post-image {
     width: 265px;
     padding-left: 3px;
+    margin-top: 5px;
 }
 
 .standart-post-title {
     font-family: 'open_sansbold';
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
-.standart-post-calendar,
+.fa.fa-calendar-o.blog,
 .standart-post-date,
-.standart-post-user-icon,
+.fa.fa-user.blog,
 .standart-post-nickname,
-.standart-post-comments-icon,
+.fa.fa-comments.blog,
 .standart-post-number-of-comments,
 .standart-post-info {
     display: inline-block;
     vertical-align: middle;
+}
+
+.fa.fa-calendar-o.blog,
+.fa.fa-user.blog,
+.fa.fa-comments.blog {
+    color: #bababa;
+    width: auto;
+    font-size: 18px;
+}
+
+.fa.fa-calendar-o.blog {
+    margin-right: 10px;
+}
+
+.fa.fa-user.blog {
+    margin-right: 8px;
+}
+
+.fa.fa-comments.blog {
+    margin-right: 8px;
+}
+
+.standart-post-description {
+    color: #8a8a8a;
 }
 
 .standart-post-date-and-calendar,
@@ -743,25 +773,15 @@ a.filter-portfolio {
     color: #bababa;
 }
 
-.standart-post-calendar img,
-.standart-post-user-icon img,
-.standart-post-comments-icon img {
-    vertical-align: middle;
-    padding-bottom: 3px;
-    padding-right: 7px;
+.standart-post-date-and-calendar {
+    margin-right: 13px;
 }
 
-.standart-post-calendar {
-    padding-right: 7px;
+.standart-post-user-icon-and-nickname {
+    margin-right: 16px;
 }
 
-.standart-post-date {
-    padding-right: 16px;
-}
 
-.standart-post-nickname {
-    padding-right: 15px;
-}
 
 .standart-post-description {
     font-size: 15px;
@@ -769,31 +789,39 @@ a.filter-portfolio {
 }
 
 .standart-post-info {
-    margin-bottom: 4px;
+    margin-bottom: 11px;
 }
 
 .border-post {
     width: 100%;
-    height: 30px;
+    height: 24px;
     border-bottom: 1px solid #ededed;
-    margin-bottom: 23px;
+    margin-bottom: 29px;
 }
 
-.link-under-post,
-.link-under-gallery {
+.border-post.gallery {
     width: 100%;
-    height: 218px;
-    margin-bottom: 37px;
+    height: 30px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 25px;
 }
 
 .link-under-post {
     background-color: #ffd42d;
+    width: 100%;
+    height: 218px;
+    margin-bottom: 33px;
 }
 
 .link-under-gallery {
     background-color: #2c383c;
+    width: 100%;
+    height: 258px;
 }
 
+.standart-post-item.last {
+    margin-bottom: 14px;
+}
 
 /******************Contact*************************/
 #google-map {
@@ -919,4 +947,37 @@ a.send-message {
     background-color: #ffd42d;
     margin-bottom: 31px;
     font-weight: bold;
+    border-radius: 5px;
+}
+
+/****************Single Post********************/
+.single-post-image {
+    width: 640px;
+    margin-bottom: 10px;
+}
+
+.standart-post-title-info-and-description.single-post {
+    padding-left: 3px;
+    width: auto;
+}
+
+.standart-post-title.single-post {
+    font-size: 24px;
+}
+
+.standart-post-title-info-and-description.single-post .standart-post-description p {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.border-under-single-post-text {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 21px;
+}
+
+.pt-title.single-post.message {
+    font-size: 21px;
+    margin-bottom: 7px;
 }
