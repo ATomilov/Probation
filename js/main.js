@@ -122,6 +122,9 @@ jQuery(function ($) {
                 $('.fa.fa-th').removeClass('active');
             }
         });
+        // $('i.fa.fa-picture-o').hover(function() {
+        //         $('i.fa.fa-picture-o').addClass('active');
+        //     });
         $('.standart-post-image').owlCarousel();
     });
 });

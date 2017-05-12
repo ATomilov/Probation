@@ -635,6 +635,7 @@ a.filter-portfolio {
 
 .services-items {
     text-align: center;
+    margin-left: 12px;
 }
 
 .services-item-title {
@@ -650,6 +651,22 @@ a.filter-portfolio {
 .fa.fa-comment,
 .fa.fa-picture-o {
     color: #c0c0c0;
+    font-size: 36px;
+}
+
+.services-item-title.active {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+.fa.fa-cloud.active,
+.fa.fa-meh-o.active,
+.fa.fa-desktop.active,
+.fa.fa-text-width.active,
+.fa.fa-comment.active,
+.fa.fa-picture-o.active {
+    color: #fff;
     font-size: 36px;
 }
 
@@ -676,20 +693,13 @@ a.filter-portfolio {
     width: 104px;
     height: 101px;
     vertical-align: top;
-    /*border: 1px solid #ededed;*/
-    margin: 0!important;
+    border: 1px solid #ededed;
+    margin-left: -5px;
+    margin-top: -1px;
 }
 
 .border-under-education-item.last.services {
     height: 31px;
-}
-
-.services-item-image {
-    text-align: center;
-}
-
-.services-item-image img {
-    vertical-align: middle;
 }
 
 .services-item-with-title:hover {

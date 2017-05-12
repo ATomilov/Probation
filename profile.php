@@ -47,23 +47,23 @@
                     </div>
                     <div class="data-inputs">
                         <span class="label-data-inputs">date of birth</span>
-                        <input type="text" class="data-text-inputs birth">
+                        <input type="text" class="data-text-inputs birth" placeholder="September 06, 1976">
                     </div>
                     <div class="data-inputs">
                         <span class="label-data-inputs">e-mail</span>
-                        <input type="text" class="data-text-inputs e-mail">
+                        <input type="text" class="data-text-inputs e-mail" placeholder="info@yourdomain.com">
                     </div>
                     <div class="data-inputs">
                         <span class="label-data-inputs">address</span>
-                        <input type="text" class="data-text-inputs address">
+                        <input type="text" class="data-text-inputs address" placeholder="121 King St, Melbourne VIC">
                     </div>
                     <div class="data-inputs">
                         <span class="label-data-inputs">phone</span>
-                        <input type="text" class="data-text-inputs phone">
+                        <input type="text" class="data-text-inputs phone" placeholder="012-3456-7890">
                     </div>
                     <div class="data-inputs last">
                         <span class="label-data-inputs">website</span>
-                        <input type="text" class="data-text-inputs website">
+                        <input type="text" class="data-text-inputs website" placeholder="www.themeforest.net">
                     </div>
                 </div>
             </div>
