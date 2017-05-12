@@ -979,5 +979,103 @@ a.send-message {
 
 .pt-title.single-post.message {
     font-size: 21px;
-    margin-bottom: 7px;
+    margin-bottom: 11px;
+}
+
+.comment-info, .border-for-avatar, .comment-pattern {
+    display: inline-block;
+}
+.border-for-avatar {
+    width: 79px;
+    height: 79px;
+    border-radius: 5px;
+    border: 1px solid #ededed;
+}
+
+.avatar img {
+    margin: 8px 9px 10px 9px;
+}
+
+.comment-pattern {
+    padding-left: 2px;
+}
+
+.comment-info {
+    padding-left: 12px;
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+.nickname {
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.time-comment {
+    color: #b8b8b8;
+    font-size: 11px;
+    display: inline-block;
+}
+
+.comment-text {
+    color: #868686;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+a.reply {
+    text-decoration: none;
+    color: #2b373b;
+}
+
+.reply-button {
+    width: 27px;
+    font-size: 12px;
+    background-color: #ffd42d;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 4px;
+    padding-top: 3px;
+    border-radius: 5px;
+}
+
+.border-under-comment.first {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 26px;
+    margin-top: 21px;
+}
+.border-under-comment.second {
+    width: 543px;
+    height: 1px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 26px;
+    margin-top: 21px;
+    float: right;
+}
+.border-under-comment.third {
+    width: 445px;
+    height: 1px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 26px;
+    margin-top: 15px;
+    float: right;
+}
+
+.border-under-comment.forth {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 22px;
+    margin-top: 20px;
+    float: right;
+}
+
+.comment-pattern.second {
+    padding-left: 100px;
+}
+.comment-pattern.third {
+    padding-left: 198px;
 }

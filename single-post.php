@@ -80,20 +80,69 @@
                 <div class="border-under-single-post-text"></div>
                 <div class="pt-title single-post message">5 Comments</div>
                 <div class="comment-pattern">
-                    <div class="avatar">
-
+                    <div class="border-for-avatar">
+                        <div class="avatar">
+                            <img src="./img/62x62.png">
+                        </div>
                     </div>
                     <div class="comment-info">
-                        <div class="nikname"></div>
-                        <div class="time-comment"></div>
-                        <div class="comment-text">
-
-                        </div>
-                        <a class="reply">
-                            <div class="reply-button"></div>
+                        <div class="nickname">Collis Ta'eed</div>
+                        <div class="time-comment">47 minutes ago</div>
+                        <div class="comment-text">Testing the comments</div>
+                        <a class="reply" href="javascript:void(0)">
+                            <div class="reply-button">reply</div>
                         </a>
                     </div>
                 </div>
+                <div class="border-under-comment first"></div>
+                <div class="comment-pattern second">
+                    <div class="border-for-avatar">
+                        <div class="avatar">
+                            <img src="./img/62x62.png">
+                        </div>
+                    </div>
+                    <div class="comment-info">
+                        <div class="nickname">Collis Ta'eed</div>
+                        <div class="time-comment">47 minutes ago</div>
+                        <div class="comment-text">Testing the comments</div>
+                        <a class="reply" href="javascript:void(0)">
+                            <div class="reply-button">reply</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="border-under-comment second"></div>
+                <div class="comment-pattern third">
+                    <div class="border-for-avatar">
+                        <div class="avatar">
+                            <img src="./img/62x62.png">
+                        </div>
+                    </div>
+                    <div class="comment-info">
+                        <div class="nickname">Collis Ta'eed</div>
+                        <div class="time-comment">47 minutes ago</div>
+                        <div class="comment-text">Testing the comments</div>
+                        <a class="reply" href="javascript:void(0)">
+                            <div class="reply-button">reply</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="border-under-comment third"></div>
+                <div class="comment-pattern">
+                    <div class="border-for-avatar">
+                        <div class="avatar">
+                            <img src="./img/62x62.png">
+                        </div>
+                    </div>
+                    <div class="comment-info">
+                        <div class="nickname">Collis Ta'eed</div>
+                        <div class="time-comment">47 minutes ago</div>
+                        <div class="comment-text">Testing the comments</div>
+                        <a class="reply" href="javascript:void(0)">
+                            <div class="reply-button">reply</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="border-under-comment forth"></div>
                 <div class="pt-title contact message">Leave a comment</div>
                 <div class="message-data">
                     <input type="text"  class="message-name" placeholder="name">
