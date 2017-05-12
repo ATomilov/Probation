@@ -19,7 +19,8 @@
 </head>
 <body>
 <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser.
+    Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <!-- Add your site or application content here -->
@@ -41,7 +42,7 @@
                         <div class="grid-work-menu-list">
                             <a class="all-click filter-portfolio" href="javascript:void(0)" class="filter-portfolio">
                                 <div class="grid-work-all">
-                                    <img class="grid-icon-in-work" src="./img/grid.png">
+                                    <i class="fa fa-th" aria-hidden="true"></i>
                                     <div class="grid-work-all-text">All</div>
                                 </div>
                             </a>
@@ -103,19 +104,8 @@
 
                 </div>
             </div>
-            <!--<div class="resume-content">-->
-
-            <!--</div>-->
-            <!--<div class="blog-content">-->
-
-            <!--</div>-->
-            <!--<div class="contact-content">-->
-
-            <!--</div>-->
             <?php include './footer.php'?>
         </div>
     </div>
-
-</div>
 </body>
 </html>

@@ -42,14 +42,17 @@ body {
 .content-container,
 .content-container-work,
 .content-container-resume,
-.content-container-blog{
+.content-container-blog,
+.content-container-contact{
     padding: 21px 30px 0 27px;
+    min-height: 536px;
 }
 
 .content,
 .content-work,
 .content-resume,
-.content-blog {
+.content-blog,
+.content-contact{
     background-color: #fff;
     width: 700px;
     height: auto;
@@ -94,6 +97,27 @@ body {
 a.tablink {
     text-decoration: none;
     font-size: 17px;
+}
+
+input[type=text], textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    border: 1px solid #DDDDDD;
+}
+
+input[type=text]:hover, textarea:hover {
+    border: 1px solid rgba(52, 152, 219, 1);
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 }
 
 /**************Profile Layout and Left Sidebar************************/
@@ -254,12 +278,12 @@ a.tablink {
 
 .label-data-inputs {
     border: 1px solid #ededed;
-    padding: 7px 16px 10px 15px;
+    padding: 7px 16px 9px 15px;
     margin-left: 3px;
 }
 
 .data-text-inputs {
-    padding: 12px 14px;
+    padding: 10px 6px;
     border: 1px solid #ededed;
     background-color: #f6f6f6;
 }
@@ -268,6 +292,35 @@ a.tablink {
     margin-bottom: 20px;
     display: inline-block;
     margin-right: 10px;
+}
+
+.data-text-inputs.name {
+    width: 141px;
+}
+
+.data-text-inputs.birth {
+    width: 166px;
+}
+
+.data-text-inputs.e-mail {
+    width: 187px;
+}
+
+.data-text-inputs.address {
+    width: 215px;
+}
+
+.data-text-inputs.phone {
+    width: 127px;
+}
+
+.data-text-inputs.website {
+    width: 180px;
+}
+
+input.data-text-inputs {
+    margin-left: -6px;
+    font-size: 16px;
 }
 
 .footer {
@@ -332,6 +385,17 @@ a.tablink {
     display: inline-block;
 }
 
+.fa.fa-th {
+    color: #b1b1b1;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.fa.fa-th.active {
+    color: #2c383c!important;
+}
+
 .top-right-navigation {
     float: right;
     padding-top: 9px;
@@ -362,7 +426,8 @@ a.tablink {
 
 .border-under-work-title,
 .border-under-resume-title,
-.border-under-blog-title {
+.border-under-blog-title,
+.border-under-contact-title {
     width: 100%;
     height: 27px;
     border-bottom: 1px solid #ededed;
@@ -730,3 +795,128 @@ a.filter-portfolio {
 }
 
 
+/******************Contact*************************/
+#google-map {
+    width: 643px;
+    height: 362px;
+    border: 0;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    margin-bottom: 16px;
+}
+
+.border-under-contact-title {
+    margin-bottom: 30px;
+}
+
+.border-under-contact-title.second {
+    margin-bottom: 21px;
+}
+
+.pt-title.contact {
+    font-size: 21px;
+    margin-bottom: 7px;
+}
+
+.pt-title.contact.message {
+    margin-bottom: 14px;
+}
+
+.contact-description {
+    color: #828282!important;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+
+.fa.fa-envelope.fa-fw.contact,
+.fa.fa-home.contact,
+.fa.fa-phone {
+    color: #2b373b;
+    width: auto;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.contact.address,
+.contact.phone,
+.contact.mail,
+.text-address,
+.text-phone,
+.text-mail {
+    display: inline-block;
+
+}
+
+.text-address,
+.text-phone,
+.text-mail {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.contact-data {
+    margin-left: 4px;
+}
+
+.contact.address {
+    margin-right: 17px;
+}
+
+.fa.fa-phone {
+    margin-right: 5px;
+}
+
+.contact.phone {
+    margin-right: 10px;
+}
+
+.fa.fa-envelope.fa-fw.contact {
+    margin-right: 7px;
+}
+
+.fa.fa-home.contact {
+    margin-right: 6px;
+}
+
+.message-data {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.message-name,
+.message-mail,
+.message-website {
+    padding: 17px 58px 17px 18px;
+    margin-left: 3px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+}
+.message-main-text {
+    border-radius: 5px;
+    padding-bottom: 4px;
+    margin-left: 16px;
+    padding-right: 8px;
+    margin-bottom: 15px;
+}
+
+a.send-message {
+    text-decoration: none;
+    color: #2b373b;
+}
+
+.send-message-button {
+    display: inline-block;
+    float: right;
+    font-size: 13px;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #ffd42d;
+    margin-bottom: 31px;
+    font-weight: bold;
+}

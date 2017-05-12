@@ -201,19 +201,6 @@
             </div>
         <?php include './footer.php'?>
         </div>
-        <!--<div class="resume-content">-->
-
-        <!--</div>-->
-        <!--<div class="blog-content">-->
-
-        <!--</div>-->
-        <!--<div class="contact-content">-->
-
-        <!--</div>-->
-
     </div>
-</div>
-
-</div>
 </body>
 </html>

@@ -20,7 +20,8 @@
 </head>
 <body>
 <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please
+    <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <!-- Add your site or application content here -->
@@ -154,19 +155,6 @@
             </div>
         </div>
         <?php include './footer.php'?>
-        <!--<div class="resume-content">-->
-
-    <!--</div>-->
-    <!--<div class="blog-content">-->
-
-    <!--</div>-->
-    <!--<div class="contact-content">-->
-
-    <!--</div>-->
-
     </div>
-</div>
-
-</div>
 </body>
 </html>

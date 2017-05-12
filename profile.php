@@ -18,7 +18,8 @@
 </head>
 <body>
 <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please
+    <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
     <!-- Add your site or application content here -->
@@ -42,41 +43,32 @@
                     <div class="border-under-pi-title"></div>
                     <div class="data-inputs">
                         <span class="label-data-inputs">name</span>
-                        <input class="data-text-inputs" type="text">
+                        <input type="text" class="data-text-inputs name" placeholder="Robb Armstrong">
                     </div>
                     <div class="data-inputs">
                         <span class="label-data-inputs">date of birth</span>
-                        <input class="data-text-inputs" type="text">
+                        <input type="text" class="data-text-inputs birth">
                     </div>
                     <div class="data-inputs">
-                        <span class="label-data-inputs">e-mail</span><input class="data-text-inputs" type="text">
+                        <span class="label-data-inputs">e-mail</span>
+                        <input type="text" class="data-text-inputs e-mail">
                     </div>
                     <div class="data-inputs">
-                        <span class="label-data-inputs">address</span><input class="data-text-inputs" type="text">
+                        <span class="label-data-inputs">address</span>
+                        <input type="text" class="data-text-inputs address">
                     </div>
                     <div class="data-inputs">
-                        <span class="label-data-inputs">phone</span><input class="data-text-inputs" type="text">
+                        <span class="label-data-inputs">phone</span>
+                        <input type="text" class="data-text-inputs phone">
                     </div>
                     <div class="data-inputs last">
-                        <span class="label-data-inputs">website</span><input class="data-text-inputs" type="text">
+                        <span class="label-data-inputs">website</span>
+                        <input type="text" class="data-text-inputs website">
                     </div>
                 </div>
-                <!--<div class="work-content">-->
-
-                <!--</div>-->
-                <!--<div class="resume-content">-->
-
-                <!--</div>-->
-                <!--<div class="blog-content">-->
-
-                <!--</div>-->
-                <!--<div class="contact-content">-->
-
-                <!--</div>-->
             </div>
             <?php include './footer.php'?>
         </div>
-
     </div>
 </body>
 </html>
