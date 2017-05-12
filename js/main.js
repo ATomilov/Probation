@@ -125,7 +125,11 @@ jQuery(function ($) {
         // $('i.fa.fa-picture-o').hover(function() {
         //         $('i.fa.fa-picture-o').addClass('active');
         //     });
-        $('.standart-post-image').owlCarousel();
+        // $('.standart-post-image.gallery').owlCarousel({
+        //     loop:true,
+        //     dots:true,
+        //     items:1
+        // });
     });
 });
 

@@ -69,13 +69,15 @@
                     </div>
                 </div>
                 <div class="border-post"></div>
-                <div class="link-under-post"></div>
+                <div class="link-under-post">
+                    <img src="./img/link.png">
+                </div>
                 <div class="standart-post-item">
-                    <div class="standart-post-image owl-carousel">
+                    <div class="standart-post-image gallery owl-carousel">
                         <img src="./img/standart_post_image.png">
-                        <!--<img src="./img/standart_post_image.png">-->
-                        <!--<img src="./img/standart_post_image.png">-->
-                        <!--<img src="./img/standart_post_image.png">-->
+<!--                        <img src="./img/standart_post_image.png">-->
+<!--                        <img src="./img/standart_post_image.png">-->
+<!--                        <img src="./img/standart_post_image.png">-->
                     </div>
                     <div class="standart-post-title-info-and-description">
                         <div class="standart-post-title">Gallery Post</div>
@@ -103,7 +105,9 @@
                     </div>
                 </div>
                 <div class="border-post"></div>
-                <div class="link-under-gallery"></div>
+                <div class="quote-under-gallery">
+                    <img src="./img/quote.png">
+                </div>
                 <div class="border-post gallery"></div>
                 <div class="standart-post-item last">
                     <div class="standart-post-image">
