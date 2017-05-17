@@ -12,9 +12,11 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/isotope.pkgd.js"></script>
-    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
 </head>
@@ -73,11 +75,11 @@
                     <img src="./img/link.png">
                 </div>
                 <div class="standart-post-item">
-                    <div class="standart-post-image gallery owl-carousel">
+                    <div class="standart-post-image gallery owl-carousel owl-theme">
                         <img src="./img/standart_post_image.png">
-<!--                        <img src="./img/standart_post_image.png">-->
-<!--                        <img src="./img/standart_post_image.png">-->
-<!--                        <img src="./img/standart_post_image.png">-->
+                        <img src="./img/standart_post_image.png">
+                        <img src="./img/standart_post_image.png">
+                        <img src="./img/standart_post_image.png">
                     </div>
                     <div class="standart-post-title-info-and-description">
                         <div class="standart-post-title">Gallery Post</div>

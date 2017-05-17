@@ -7,14 +7,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script type="text/javascript" src="js/googleapis.js"></script>
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/isotope.pkgd.js"></script>
-    <script type="text/javascript" src="js/googleapis.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL3o6xsBP7T326KyGaJz-RDS5QhN9Wq_4&callback=initMap" async defer></script> -->
     <script type="text/javascript" src="js/main.js"></script>
 
 
@@ -43,6 +41,7 @@
                 </div>
                 <div class="border-under-contact-title"></div>
                 <div id="google-map"></div>
+                <!-- <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2650.3029359002676!2d144.96396132788283!3d-37.819111043529894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1495050211412" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
                 <div class="pt-title contact">Contact Info</div>
                 <div class="contact-description">This is Photoshop's version of Lorem Ipsum.
                     Proin gravida nibh vel velit auctor aliquet.

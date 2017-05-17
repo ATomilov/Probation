@@ -125,28 +125,39 @@ jQuery(function ($) {
         // $('i.fa.fa-picture-o').hover(function() {
         //         $('i.fa.fa-picture-o').addClass('active');
         //     });
-        // $('.standart-post-image.gallery').owlCarousel({
-        //     loop:true,
-        //     dots:true,
-        //     items:1
-        // });
+        if(window.location.pathname == "/blog.php"){
+            $('.standart-post-image.gallery').owlCarousel({
+                        loop:true,
+                        nav:true,
+                        dots:true,
+                        items:1
+                    });
+        }
+            
+
+        
     });
 });
 
-google.maps.event.addDomListener(window, 'load', init);
 
-function init() {
-    var mapOptions = {
-        zoom: 16,
-        center: new google.maps.LatLng(-37.818460, 144.965180)
-    };
-    var mapElement = document.getElementById('google-map');
-    var myIcon = new google.maps.MarkerImage("img/map-icon.png", null, null, null, new google.maps.Size(64,64));
-    var map = new google.maps.Map(mapElement, mapOptions);
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(-37.818460, 144.965180),
-        map: map,
-        icon: myIcon
-    });
+if(window.location.pathname == "/contact.php"){
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+        var mapOptions = {
+            zoom: 16,
+            center: new google.maps.LatLng(-37.818460, 144.965180)
+        };
+        var mapElement = document.getElementById('google-map');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(-37.818460, 144.965180),
+            map: map,
+            icon: {
+                url: "../img/marker.png",
+                scaledSize: new google.maps.Size(100, 100)
+            }
+        });
+    }
 }
 

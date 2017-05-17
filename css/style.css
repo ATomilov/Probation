@@ -3,7 +3,18 @@
     src: url('../custom_font/opensans-webfont.woff2') format('woff2'),
     url('../custom_font/opensans-webfont.woff') format('woff'),
     url('../custom_font/opensans-webfont.ttf') format('truetype');
-    url('../custom_font/../custom_font/opensans-webfont.eot') format('eot');
+    url('../custom_font/opensans-webfont.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'opensans_regular';
+    src: url('../custom_font/opensans-regular-webfont.woff2') format('woff2'),
+    url('../custom_font/opensans-regular-webfont.woff') format('woff'),
+    url('../custom_font/opensans-regular-webfont.ttf') format('truetype');
+    url('../custom_font/opensans-regular-webfont.eot') format('eot');
     font-weight: normal;
     font-style: normal;
 
@@ -14,8 +25,18 @@
     src: url('../custom_font/opbold-webfont.woff2') format('woff2'),
     url('../custom_font/../custom_font/opbold-webfont.eot') format('eot'),
     url('../custom_font/../custom_font/opbold-webfont.woff') format('woff'),
-    url('../custom_font/../custom_font/opbold-webfont.ttf') format('truetype');
+    url('../custom_font/opbold-webfont.ttf') format('truetype');
     font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'opensans_extrabold';
+    src: url('../custom_font/opensans-extrabold-webfont.woff2') format('woff2'),
+    url('../custom_font/opensans-extrabold-webfont.woff') format('woff'),
+    url('../custom_font/opensans-extrabold-webfont.ttf') format('truetype');
+    url('../custom_font/opensans-extrabold-webfont.eot') format('eot');
+    font-weight: normal;
     font-style: normal;
 
 }
@@ -58,10 +79,6 @@ body {
     height: auto;
     float: left;
 }
-
-/*.content-work, #content-resume {*/
-    /*height: auto;*/
-/*}*/
 
 .content-container-work,
 .content-container-resume,
@@ -118,6 +135,11 @@ input[type=text]:hover, textarea:hover {
 
 input[type=text]:focus, textarea:focus {
     box-shadow: 0 0 5px #ffd42d;
+}
+
+input[placeholder] {
+color: #484848;
+font-family: 'opensans_regular';
 }
 
 /**************Profile Layout and Left Sidebar************************/
@@ -223,10 +245,12 @@ input[type=text]:focus, textarea:focus {
 }
 
 .exp-text {
+    font-family: 'open_sanslight';
     margin-left: 2px;
-    line-height: 1.7;
+    line-height: 1.8;
     width: 617px;
     text-align: justify;
+    color: #828282;
 }
 
 .border-under-exp-text {
@@ -261,7 +285,7 @@ input[type=text]:focus, textarea:focus {
 }
 
 .border-under-pi-title {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 }
 
 .border-under-ed-title {
@@ -278,8 +302,9 @@ input[type=text]:focus, textarea:focus {
 
 .label-data-inputs {
     border: 1px solid #ededed;
-    padding: 7px 16px 9px 15px;
+    padding: 10px 16px 10px 15px;
     margin-left: 3px;
+    color: #a8a8a8;
 }
 
 .data-text-inputs {
@@ -319,8 +344,11 @@ input[type=text]:focus, textarea:focus {
 }
 
 input.data-text-inputs {
+    font-family: 'opensans_regular';
     margin-left: -6px;
     font-size: 16px;
+    text-align: center;
+    color: #484848;
 }
 
 .footer {
@@ -328,7 +356,6 @@ input.data-text-inputs {
     width: 100%;
     background-color: #f1f1f1;
     float: left;
-    /*margin-bottom: 50px;*/
 }
 
 .fa.fa-facebook,
@@ -355,7 +382,7 @@ input.data-text-inputs {
 }
 
 .data-inputs.last {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .copyright {
@@ -363,7 +390,7 @@ input.data-text-inputs {
     padding-top: 25px;
     font-size: 14px;
     float: left;
-    font-weight: bold;
+    font-family: 'opensans_regular';
 }
 
 .social-icons {
@@ -704,14 +731,36 @@ a.filter-portfolio {
 
 .services-item-with-title:hover {
     background-color: #ffd42d;
-    font-weight: bold;
+}
+
+.services-item-with-title:hover .services-item-title {
+    font-family: 'open_sansbold';
+    color: #fff;
+}
+
+.services-item-with-title:hover .fa.fa-cloud,
+.services-item-with-title:hover .fa.fa-meh-o,
+.services-item-with-title:hover .fa.fa-desktop,
+.services-item-with-title:hover .fa.fa-text-width,
+.services-item-with-title:hover .fa.fa-comment,
+.services-item-with-title:hover .fa.fa-picture-o {
+    color: #fff;
+}
+
+.services-item-with-title:hover .border-under-services-item-image {
+    border-bottom: 1px solid #fff;
 }
 
 /******************Blog*********************/
 
+.owl-nav {
+    display: none;
+}
+
+
 .standart-post-image,
 .standart-post-title-info-and-description {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 .blog-title {
@@ -724,9 +773,9 @@ a.filter-portfolio {
 }
 
 .standart-post-image {
-    width: 265px;
-    padding-left: 3px;
-    margin-top: 5px;
+    width: 265px !important;
+    padding-left: 3px !important;
+    margin-top: 5px !important;
 }
 
 .standart-post-title {

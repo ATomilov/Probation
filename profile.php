@@ -42,28 +42,40 @@
                     <div class="pt-title">Personal Info</div>
                     <div class="border-under-pi-title"></div>
                     <div class="data-inputs">
-                        <span class="label-data-inputs">name</span>
-                        <input type="text" class="data-text-inputs name" placeholder="Robb Armstrong">
+                        <label>
+                            <span class="label-data-inputs">name</span>
+                            <input type="text" class="data-text-inputs name" placeholder="Robb Armstrong">
+                        </label>
                     </div>
                     <div class="data-inputs">
-                        <span class="label-data-inputs">date of birth</span>
-                        <input type="text" class="data-text-inputs birth" placeholder="September 06, 1976">
+                        <label>
+                            <span class="label-data-inputs">date of birth</span>
+                            <input type="text" class="data-text-inputs birth" placeholder="September 06, 1976">
+                        </label>
                     </div>
                     <div class="data-inputs">
-                        <span class="label-data-inputs">e-mail</span>
-                        <input type="text" class="data-text-inputs e-mail" placeholder="info@yourdomain.com">
+                        <label>
+                            <span class="label-data-inputs">e-mail</span>
+                            <input type="text" class="data-text-inputs e-mail" placeholder="info@yourdomain.com">
+                        </label>
                     </div>
                     <div class="data-inputs">
-                        <span class="label-data-inputs">address</span>
-                        <input type="text" class="data-text-inputs address" placeholder="121 King St, Melbourne VIC">
+                        <label>
+                            <span class="label-data-inputs">address</span>
+                            <input type="text" class="data-text-inputs address" placeholder="121 King St, Melbourne VIC">
+                        </label>
                     </div>
                     <div class="data-inputs">
-                        <span class="label-data-inputs">phone</span>
-                        <input type="text" class="data-text-inputs phone" placeholder="012-3456-7890">
+                        <label>
+                            <span class="label-data-inputs">phone</span>
+                            <input type="text" class="data-text-inputs phone" placeholder="012-3456-7890">
+                        </label>
                     </div>
                     <div class="data-inputs last">
-                        <span class="label-data-inputs">website</span>
-                        <input type="text" class="data-text-inputs website" placeholder="www.themeforest.net">
+                        <label>
+                            <span class="label-data-inputs">website</span>
+                            <input type="text" class="data-text-inputs website" placeholder="www.themeforest.net">
+                        </label>
                     </div>
                 </div>
             </div>
