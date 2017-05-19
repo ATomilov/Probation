@@ -69,7 +69,7 @@
                             <div class="grid-work-item wallpapers">
                                 <img src="./img/200x160.png">
                             </div>
-                            <div class="grid-work-item last branding">
+                            <div class="grid-work-item branding">  <!-- last -->
                                 <img src="./img/200x160.png">
                             </div>
                             <div class="grid-work-item wallpapers">
@@ -78,7 +78,7 @@
                             <div class="grid-work-item branding">
                                 <img src="./img/200x160.png">
                             </div>
-                            <div class="grid-work-item last photography">
+                            <div class="grid-work-item photography"> <!-- last -->
                                 <img src="./img/200x160.png">
                             </div>
                             <div class="grid-work-item illustrations">
@@ -87,7 +87,7 @@
                             <div class="grid-work-item illustrations">
                                 <img src="./img/200x160.png">
                             </div>
-                            <div class="grid-work-item last photography">
+                            <div class="grid-work-item photography"> <!-- last -->
                                 <img src="./img/200x160.png">
                             </div>
                             <div class="grid-work-item wallpapers">
@@ -96,7 +96,7 @@
                             <div class="grid-work-item logos">
                                 <img src="./img/200x160.png">
                             </div>
-                            <div class="grid-work-item last logos">
+                            <div class="grid-work-item logos"> <!-- last -->
                                 <img src="./img/200x160.png">
                             </div>
                         </div>

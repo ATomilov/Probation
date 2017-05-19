@@ -45,83 +45,88 @@ jQuery(function ($) {
                 $('.blog-click').removeClass('tab-active');
             }
         });
-        $('.all-click').click(function () {
+        if(window.location.pathname == "/work.php") {
             $('.grid-work-items').isotope({filter: '*', layoutMode: 'fitRows'});
-            $(this).addClass('filter-type-active');
+            $('.all-click').addClass('filter-type-active');
             $('.fa.fa-th').addClass('active');
-            if ( $(this).hasClass('filter-type-active') ) {
-                $('.branding-click').removeClass('filter-type-active');
-                $('.wallpapers-click').removeClass('filter-type-active');
-                $('.photography-click').removeClass('filter-type-active');
-                $('.illustrations-click').removeClass('filter-type-active');
-                $('.logos-click').removeClass('filter-type-active');
-            }
-        });
-        $('.branding-click').click(function () {
-            $('.grid-work-items').isotope({ filter: '.branding', layoutMode: 'fitRows'});
-            $('.grid-work-items').removeClass('last');
-            $(this).addClass('filter-type-active');
-            if ( $(this).hasClass('filter-type-active') ) {
-                $('.all-click').removeClass('filter-type-active');
-                $('.wallpapers-click').removeClass('filter-type-active');
-                $('.photography-click').removeClass('filter-type-active');
-                $('.illustrations-click').removeClass('filter-type-active');
-                $('.logos-click').removeClass('filter-type-active');
-                $('.fa.fa-th').removeClass('active');
-            }
-        });
-        $('.wallpapers-click').click(function () {
-            $('.grid-work-items').isotope({ filter: '.wallpapers', layoutMode: 'fitRows'});
-            $('.grid-work-items').removeClass('last');
-            $(this).addClass('filter-type-active');
-            if ( $(this).hasClass('filter-type-active') ) {
-                $('.branding-click').removeClass('filter-type-active');
-                $('.all-click').removeClass('filter-type-active');
-                $('.photography-click').removeClass('filter-type-active');
-                $('.illustrations-click').removeClass('filter-type-active');
-                $('.logos-click').removeClass('filter-type-active');
-                $('.fa.fa-th').removeClass('active');
-            }
-        });
-        $('.photography-click').click(function () {
-            $('.grid-work-items').isotope({ filter: '.photography', layoutMode: 'fitRows'});
-            $('.grid-work-items').removeClass('last');
-            $(this).addClass('filter-type-active');
-            if ( $(this).hasClass('filter-type-active') ) {
-                $('.branding-click').removeClass('filter-type-active');
-                $('.wallpapers-click').removeClass('filter-type-active');
-                $('.all-click').removeClass('filter-type-active');
-                $('.illustrations-click').removeClass('filter-type-active');
-                $('.logos-click').removeClass('filter-type-active');
-                $('.fa.fa-th').removeClass('active');
-            }
-        });
-        $('.illustrations-click').click(function () {
-            $('.grid-work-items').isotope({ filter: '.illustrations', layoutMode: 'fitRows'});
-            $('.grid-work-items').removeClass('last');
-            $(this).addClass('filter-type-active');
-            if ( $(this).hasClass('filter-type-active') ) {
-                $('.branding-click').removeClass('filter-type-active');
-                $('.wallpapers-click').removeClass('filter-type-active');
-                $('.all-click').removeClass('filter-type-active');
-                $('.photography-click').removeClass('filter-type-active');
-                $('.logos-click').removeClass('filter-type-active');
-                $('.fa.fa-th').removeClass('active');
-            }
-        });
-        $('.logos-click').click(function () {
-            $('.grid-work-items').isotope({ filter: '.logos', layoutMode: 'fitRows'});
-            $('.grid-work-items').removeClass('last');
-            $(this).addClass('filter-type-active');
-            if ( $(this).hasClass('filter-type-active') ) {
-                $('.branding-click').removeClass('filter-type-active');
-                $('.wallpapers-click').removeClass('filter-type-active');
-                $('.all-click').removeClass('filter-type-active');
-                $('.photography-click').removeClass('filter-type-active');
-                $('.illustrations-click').removeClass('filter-type-active');
-                $('.fa.fa-th').removeClass('active');
-            }
-        });
+            $('.all-click').click(function () {
+                $('.grid-work-items').isotope({filter: '*', layoutMode: 'fitRows'});
+                $(this).addClass('filter-type-active');
+                $('.fa.fa-th').addClass('active');
+                if ( $(this).hasClass('filter-type-active') ) {
+                    $('.branding-click').removeClass('filter-type-active');
+                    $('.wallpapers-click').removeClass('filter-type-active');
+                    $('.photography-click').removeClass('filter-type-active');
+                    $('.illustrations-click').removeClass('filter-type-active');
+                    $('.logos-click').removeClass('filter-type-active');
+                }
+            });
+            $('.branding-click').click(function () {
+                $('.grid-work-items').isotope({ filter: '.branding', layoutMode: 'fitRows'});
+                $('.grid-work-items').removeClass('last');
+                $(this).addClass('filter-type-active');
+                if ( $(this).hasClass('filter-type-active') ) {
+                    $('.all-click').removeClass('filter-type-active');
+                    $('.wallpapers-click').removeClass('filter-type-active');
+                    $('.photography-click').removeClass('filter-type-active');
+                    $('.illustrations-click').removeClass('filter-type-active');
+                    $('.logos-click').removeClass('filter-type-active');
+                    $('.fa.fa-th').removeClass('active');
+                }
+            });
+            $('.wallpapers-click').click(function () {
+                $('.grid-work-items').isotope({ filter: '.wallpapers', layoutMode: 'fitRows'});
+                $('.grid-work-items').removeClass('last');
+                $(this).addClass('filter-type-active');
+                if ( $(this).hasClass('filter-type-active') ) {
+                    $('.branding-click').removeClass('filter-type-active');
+                    $('.all-click').removeClass('filter-type-active');
+                    $('.photography-click').removeClass('filter-type-active');
+                    $('.illustrations-click').removeClass('filter-type-active');
+                    $('.logos-click').removeClass('filter-type-active');
+                    $('.fa.fa-th').removeClass('active');
+                }
+            });
+            $('.photography-click').click(function () {
+                $('.grid-work-items').isotope({ filter: '.photography', layoutMode: 'fitRows'});
+                $('.grid-work-items').removeClass('last');
+                $(this).addClass('filter-type-active');
+                if ( $(this).hasClass('filter-type-active') ) {
+                    $('.branding-click').removeClass('filter-type-active');
+                    $('.wallpapers-click').removeClass('filter-type-active');
+                    $('.all-click').removeClass('filter-type-active');
+                    $('.illustrations-click').removeClass('filter-type-active');
+                    $('.logos-click').removeClass('filter-type-active');
+                    $('.fa.fa-th').removeClass('active');
+                }
+            });
+            $('.illustrations-click').click(function () {
+                $('.grid-work-items').isotope({ filter: '.illustrations', layoutMode: 'fitRows'});
+                $('.grid-work-items').removeClass('last');
+                $(this).addClass('filter-type-active');
+                if ( $(this).hasClass('filter-type-active') ) {
+                    $('.branding-click').removeClass('filter-type-active');
+                    $('.wallpapers-click').removeClass('filter-type-active');
+                    $('.all-click').removeClass('filter-type-active');
+                    $('.photography-click').removeClass('filter-type-active');
+                    $('.logos-click').removeClass('filter-type-active');
+                    $('.fa.fa-th').removeClass('active');
+                }
+            });
+            $('.logos-click').click(function () {
+                $('.grid-work-items').isotope({ filter: '.logos', layoutMode: 'fitRows'});
+                $('.grid-work-items').removeClass('last');
+                $(this).addClass('filter-type-active');
+                if ( $(this).hasClass('filter-type-active') ) {
+                    $('.branding-click').removeClass('filter-type-active');
+                    $('.wallpapers-click').removeClass('filter-type-active');
+                    $('.all-click').removeClass('filter-type-active');
+                    $('.photography-click').removeClass('filter-type-active');
+                    $('.illustrations-click').removeClass('filter-type-active');
+                    $('.fa.fa-th').removeClass('active');
+                }
+            });
+        }
         // $('i.fa.fa-picture-o').hover(function() {
         //         $('i.fa.fa-picture-o').addClass('active');
         //     });

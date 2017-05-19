@@ -116,6 +116,26 @@ a.tablink {
     font-size: 17px;
 }
 
+a.tablink:hover .tabs {
+    background-color: #ffd42d;
+}
+
+a.tablink:hover .profile-tab,
+a.tablink:hover .work-tab, 
+a.tablink:hover .resume-tab,
+a.tablink:hover .blog-tab,
+a.tablink:hover .contact-tab {
+    color: #2c383c!important;
+}
+
+a.tablink:hover .fa.fa-user,
+a.tablink:hover .fa.fa-briefcase,
+a.tablink:hover .fa.fa-file-text,
+a.tablink:hover .fa.fa-comment,
+a.tablink:hover .fa.fa-envelope {
+    color: #2c383c !important;
+}
+
 input[type=text], textarea {
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
@@ -168,23 +188,6 @@ font-family: 'opensans_regular';
     display: inline-block;
 }
 
-.profile-tab-img,
-.work-tab-img,
-.resume-tab-img,
-.blog-tab-img,
-.contact-tab-img {
-    width: 51px;
-    text-align: center;
-}
-
-.profile-tab-img img,
-.work-tab-img img,
-.resume-tab-img img,
-.blog-tab-img img,
-.contact-tab-img img {
-    vertical-align: middle;
-}
-
 .tabs {
     padding: 23px 0;
     border-bottom: 1px solid #222b2e;
@@ -194,12 +197,13 @@ font-family: 'opensans_regular';
 .tab-active div{
     background-color: #ffd42d;
 }
+
 .tab-active .tabs .fa.fa-user,
 .tab-active .tabs .fa.fa-briefcase,
 .tab-active .tabs .fa.fa-file-text,
 .tab-active .tabs .fa.fa-comment,
 .tab-active .tabs .fa.fa-envelope {
-    color: #2c383c!important;
+    color: #2c383c !important;
 }
 
 .tab-active .tabs .profile-tab,
@@ -526,7 +530,7 @@ input.data-text-inputs {
 
 .filter-type-active div {
     background-color: #ffd42d;
-    color: #2c383c!important;
+    color: #2c383c !important;
 }
 
 a.filter-portfolio {
@@ -542,7 +546,6 @@ a.filter-portfolio {
 .grid-work-item {
     display: inline-block;
     position: relative;
-    /*float: left;*/
     padding-bottom: 23px;
     padding-right: 8px;
     padding-left: 8px;
@@ -757,6 +760,20 @@ a.filter-portfolio {
     display: none;
 }
 
+.owl-dots {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #ffd42e !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #ffffff !important;
+}
 
 .standart-post-image,
 .standart-post-title-info-and-description {
@@ -982,9 +999,9 @@ a.filter-portfolio {
 }
 .message-main-text {
     border-radius: 5px;
-    padding-bottom: 4px;
+    padding-bottom: 13px;
     margin-left: 16px;
-    padding-right: 8px;
+    padding-right: 26px;
     margin-bottom: 15px;
 }
 
@@ -1005,6 +1022,10 @@ a.send-message {
     margin-bottom: 31px;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.send-message-button:hover {
+    background-color: #f2c209
 }
 
 /****************Single Post********************/
