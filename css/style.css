@@ -65,7 +65,7 @@ body {
 .content-container-resume,
 .content-container-blog,
 .content-container-contact{
-    padding: 21px 30px 0 27px;
+    padding: 21px 27px 0 27px;
     min-height: 536px;
 }
 
@@ -237,7 +237,7 @@ font-family: 'opensans_regular';
 .blog-title {
     font-family: 'open_sansbold' !important;
     font-weight: 900;
-    color: #000;
+    color: #2c383c;
 }
 
 .border-under-welcome-text {
@@ -374,6 +374,7 @@ input.data-text-inputs {
 .fa.fa-arrow-circle-left,
 .fa.fa-arrow-circle-right {
     font-size: 30px;
+    color: #2c383c;
 }
 
 .fa.fa-facebook,
@@ -410,6 +411,10 @@ input.data-text-inputs {
 
 /***************Work Layout*********************/
 
+.work-content {
+    margin-bottom: -6px;
+}
+
 .work-title,
 .text-top-right-navigation,
 .navigation-arrow {
@@ -430,6 +435,7 @@ input.data-text-inputs {
 .top-right-navigation {
     float: right;
     padding-top: 9px;
+    padding-right: 3px;
 }
 .text-top-right-navigation,
 .fa.fa-arrow-circle-left,
@@ -505,7 +511,6 @@ input.data-text-inputs {
 
 .grid-work-branding {
     padding: 8px 12px 8px 12px;
-    margin-left: 2px;
 }
 
 .grid-work-wallpapers {
@@ -762,8 +767,8 @@ a.filter-portfolio {
 
 .owl-dots {
     position: absolute;
-    bottom: 20px;
-    right: 30px;
+    bottom: 10px;
+    right: 16px;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
@@ -773,6 +778,12 @@ a.filter-portfolio {
 
 .owl-theme .owl-dots .owl-dot span {
     background: #ffffff !important;
+}
+
+.owl-dot span {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 5px 4px !important;
 }
 
 .standart-post-image,

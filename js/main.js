@@ -1,52 +1,61 @@
 jQuery(function ($) {
+    function DeleteActiveClassWithoutImage(first, second, third, fourth, fifth){
+        $(first).removeClass('filter-type-active');
+        $(second).removeClass('filter-type-active');
+        $(third).removeClass('filter-type-active');
+        $(fourth).removeClass('filter-type-active');
+        $(fifth).removeClass('filter-type-active');
+    }
+
+    function DeleteActiveClassWithImage(first, second, third, fourth, fifth, sixth){
+        $(first).removeClass('filter-type-active');
+        $(second).removeClass('filter-type-active');
+        $(third).removeClass('filter-type-active');
+        $(fourth).removeClass('filter-type-active');
+        $(fifth).removeClass('filter-type-active');
+        $(sixth).removeClass('active');
+    }
+
+    function DeleteActiveClassInLeftSidebar(first, second, third, fourth){
+        $(first).removeClass('tab-active');
+        $(second).removeClass('tab-active');
+        $(third).removeClass('tab-active');
+        $(fourth).removeClass('tab-active');
+    }
+
     $(document).ready(function () {
         $('.profile-click').click(function () {
            $(this).addClass('tab-active');
            if ( $(this).hasClass('tab-active') ) {
-               $('.work-click').removeClass('tab-active');
-               $('.resume-click').removeClass('tab-active');
-               $('.blog-click').removeClass('tab-active');
-               $('.contact-click').removeClass('tab-active');
+            DeleteActiveClassInLeftSidebar('.work-click', '.resume-click', '.blog-click', '.contact-click');
            }
         });
         $('.work-click').click(function () {
             $(this).addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
-                $('.profile-click').removeClass('tab-active');
-                $('.resume-click').removeClass('tab-active');
-                $('.blog-click').removeClass('tab-active');
-                $('.contact-click').removeClass('tab-active');
+                DeleteActiveClassInLeftSidebar('.profile-click', '.resume-click', '.blog-click', '.contact-click');
             }
         });
         $('.resume-click').click(function () {
             $(this).addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
-                $('.work-click').removeClass('tab-active');
-                $('.profile-click').removeClass('tab-active');
-                $('.blog-click').removeClass('tab-active');
-                $('.contact-click').removeClass('tab-active');
+                DeleteActiveClassInLeftSidebar('.work-click', '.profile-click', '.blog-click', '.contact-click');
             }
         });
         $('.blog-click').click(function () {
             $(this).addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
-                $('.work-click').removeClass('tab-active');
-                $('.profile-click').removeClass('tab-active');
-                $('.resume-click').removeClass('tab-active');
-                $('.contact-click').removeClass('tab-active');
+                DeleteActiveClassInLeftSidebar('.work-click', '.profile-click', '.resume-click', '.contact-click');
             }
         });
         $('.contact-click').click(function () {
             $(this).addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
-                $('.work-click').removeClass('tab-active');
-                $('.profile-click').removeClass('tab-active');
-                $('.resume-click').removeClass('tab-active');
-                $('.blog-click').removeClass('tab-active');
+                DeleteActiveClassInLeftSidebar('.work-click', '.profile-click', '.resume-click', '.blog-click');
             }
         });
         if(window.location.pathname == "/work.php") {
-            $('.grid-work-items').isotope({filter: '*', layoutMode: 'fitRows'});
+            $('.grid-work-items').isotope({filter: '*', layoutMode: 'fitRows', masonry: { columnWidth: 400}});
             $('.all-click').addClass('filter-type-active');
             $('.fa.fa-th').addClass('active');
             $('.all-click').click(function () {
@@ -54,24 +63,17 @@ jQuery(function ($) {
                 $(this).addClass('filter-type-active');
                 $('.fa.fa-th').addClass('active');
                 if ( $(this).hasClass('filter-type-active') ) {
-                    $('.branding-click').removeClass('filter-type-active');
-                    $('.wallpapers-click').removeClass('filter-type-active');
-                    $('.photography-click').removeClass('filter-type-active');
-                    $('.illustrations-click').removeClass('filter-type-active');
-                    $('.logos-click').removeClass('filter-type-active');
+                    DeleteActiveClassWithoutImage('.branding-click', '.wallpapers-click', '.photography-click',
+                     '.illustrations-click', '.logos-click');
                 }
             });
             $('.branding-click').click(function () {
                 $('.grid-work-items').isotope({ filter: '.branding', layoutMode: 'fitRows'});
-                $('.grid-work-items').removeClass('last');
+                // $('.grid-work-items').removeClass('last');
                 $(this).addClass('filter-type-active');
                 if ( $(this).hasClass('filter-type-active') ) {
-                    $('.all-click').removeClass('filter-type-active');
-                    $('.wallpapers-click').removeClass('filter-type-active');
-                    $('.photography-click').removeClass('filter-type-active');
-                    $('.illustrations-click').removeClass('filter-type-active');
-                    $('.logos-click').removeClass('filter-type-active');
-                    $('.fa.fa-th').removeClass('active');
+                    DeleteActiveClassWithImage('.all-click', '.wallpapers-click', '.photography-click',
+                        '.illustrations-click', '.logos-click', '.fa.fa-th');
                 }
             });
             $('.wallpapers-click').click(function () {
@@ -79,12 +81,8 @@ jQuery(function ($) {
                 $('.grid-work-items').removeClass('last');
                 $(this).addClass('filter-type-active');
                 if ( $(this).hasClass('filter-type-active') ) {
-                    $('.branding-click').removeClass('filter-type-active');
-                    $('.all-click').removeClass('filter-type-active');
-                    $('.photography-click').removeClass('filter-type-active');
-                    $('.illustrations-click').removeClass('filter-type-active');
-                    $('.logos-click').removeClass('filter-type-active');
-                    $('.fa.fa-th').removeClass('active');
+                    DeleteActiveClassWithImage('.branding-click', '.all-click', '.photography-click',
+                        '.illustrations-click', '.logos-click', '.fa.fa-th');
                 }
             });
             $('.photography-click').click(function () {
@@ -92,12 +90,8 @@ jQuery(function ($) {
                 $('.grid-work-items').removeClass('last');
                 $(this).addClass('filter-type-active');
                 if ( $(this).hasClass('filter-type-active') ) {
-                    $('.branding-click').removeClass('filter-type-active');
-                    $('.wallpapers-click').removeClass('filter-type-active');
-                    $('.all-click').removeClass('filter-type-active');
-                    $('.illustrations-click').removeClass('filter-type-active');
-                    $('.logos-click').removeClass('filter-type-active');
-                    $('.fa.fa-th').removeClass('active');
+                    DeleteActiveClassWithImage('.branding-click', '.wallpapers-click', '.all-click',
+                        '.illustrations-click', '.logos-click', '.fa.fa-th');
                 }
             });
             $('.illustrations-click').click(function () {
@@ -105,12 +99,8 @@ jQuery(function ($) {
                 $('.grid-work-items').removeClass('last');
                 $(this).addClass('filter-type-active');
                 if ( $(this).hasClass('filter-type-active') ) {
-                    $('.branding-click').removeClass('filter-type-active');
-                    $('.wallpapers-click').removeClass('filter-type-active');
-                    $('.all-click').removeClass('filter-type-active');
-                    $('.photography-click').removeClass('filter-type-active');
-                    $('.logos-click').removeClass('filter-type-active');
-                    $('.fa.fa-th').removeClass('active');
+                    DeleteActiveClassWithImage('.branding-click', '.wallpapers-click', '.all-click',
+                        '.photography-click', '.logos-click', '.fa.fa-th');
                 }
             });
             $('.logos-click').click(function () {
@@ -118,12 +108,8 @@ jQuery(function ($) {
                 $('.grid-work-items').removeClass('last');
                 $(this).addClass('filter-type-active');
                 if ( $(this).hasClass('filter-type-active') ) {
-                    $('.branding-click').removeClass('filter-type-active');
-                    $('.wallpapers-click').removeClass('filter-type-active');
-                    $('.all-click').removeClass('filter-type-active');
-                    $('.photography-click').removeClass('filter-type-active');
-                    $('.illustrations-click').removeClass('filter-type-active');
-                    $('.fa.fa-th').removeClass('active');
+                    DeleteActiveClassWithImage('.branding-click', '.wallpapers-click', '.all-click',
+                        '.photography-click', '.illustrations-click', '.fa.fa-th');
                 }
             });
         }

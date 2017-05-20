@@ -63,7 +63,7 @@
                             </a>
                         </div>
                         <div class="grid-work-items">
-                            <div class="grid-work-item  branding">
+                            <div class="grid-work-item branding">
                                 <img src="./img/200x160.png">
                             </div>
                             <div class="grid-work-item wallpapers">
