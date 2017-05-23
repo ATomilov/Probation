@@ -124,17 +124,22 @@ a.tablink:hover .profile-tab,
 a.tablink:hover .work-tab, 
 a.tablink:hover .resume-tab,
 a.tablink:hover .blog-tab,
-a.tablink:hover .contact-tab {
-    color: #2c383c!important;
-}
-
+a.tablink:hover .contact-tab,
 a.tablink:hover .fa.fa-user,
 a.tablink:hover .fa.fa-briefcase,
 a.tablink:hover .fa.fa-file-text,
 a.tablink:hover .fa.fa-comment,
 a.tablink:hover .fa.fa-envelope {
-    color: #2c383c !important;
+    color: #2c383c!important;
 }
+
+// a.tablink:hover .fa.fa-user,
+// a.tablink:hover .fa.fa-briefcase,
+// a.tablink:hover .fa.fa-file-text,
+// a.tablink:hover .fa.fa-comment,
+// a.tablink:hover .fa.fa-envelope {
+//     color: #2c383c !important;
+// }
 
 input[type=text], textarea {
     -webkit-transition: all 0.30s ease-in-out;
@@ -158,8 +163,8 @@ input[type=text]:focus, textarea:focus {
 }
 
 input[placeholder] {
-color: #484848;
-font-family: 'opensans_regular';
+    color: #484848;
+    font-family: 'opensans_regular';
 }
 
 /**************Profile Layout and Left Sidebar************************/
@@ -725,7 +730,7 @@ a.filter-portfolio {
 .services-item-with-title {
     display: inline-block;
     padding: 32px 53px 30px 52px;
-    width: 104px;
+    width: 105px;
     height: 101px;
     vertical-align: top;
     border: 1px solid #ededed;
@@ -1012,7 +1017,7 @@ a.filter-portfolio {
     border-radius: 5px;
     padding-bottom: 13px;
     margin-left: 16px;
-    padding-right: 26px;
+    padding-right: 29px;
     margin-bottom: 15px;
 }
 

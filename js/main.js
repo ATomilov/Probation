@@ -24,36 +24,41 @@ jQuery(function ($) {
     }
 
     $(document).ready(function () {
-        $('.profile-click').click(function () {
-           $(this).addClass('tab-active');
-           if ( $(this).hasClass('tab-active') ) {
+        if(window.location.pathname == "/profile.php"){
+            $('.profile-click').addClass('tab-active');
+            if ( $(this).hasClass('tab-active') ) {
             DeleteActiveClassInLeftSidebar('.work-click', '.resume-click', '.blog-click', '.contact-click');
            }
-        });
-        $('.work-click').click(function () {
-            $(this).addClass('tab-active');
+        }
+
+        if(window.location.pathname == "/work.php"){
+            $('.work-click').addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
                 DeleteActiveClassInLeftSidebar('.profile-click', '.resume-click', '.blog-click', '.contact-click');
             }
-        });
-        $('.resume-click').click(function () {
-            $(this).addClass('tab-active');
+        }
+
+        if(window.location.pathname == "/resume.php"){
+            $('.resume-click').addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
                 DeleteActiveClassInLeftSidebar('.work-click', '.profile-click', '.blog-click', '.contact-click');
             }
-        });
-        $('.blog-click').click(function () {
-            $(this).addClass('tab-active');
+        }
+
+        if(window.location.pathname == "/blog.php"){
+            $('.blog-click').addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
                 DeleteActiveClassInLeftSidebar('.work-click', '.profile-click', '.resume-click', '.contact-click');
             }
-        });
-        $('.contact-click').click(function () {
-            $(this).addClass('tab-active');
+        }
+
+        if(window.location.pathname == "/contact.php"){
+            $('.contact-click').addClass('tab-active');
             if ( $(this).hasClass('tab-active') ) {
                 DeleteActiveClassInLeftSidebar('.work-click', '.profile-click', '.resume-click', '.blog-click');
             }
-        });
+        }
+        
         if(window.location.pathname == "/work.php") {
             $('.grid-work-items').isotope({filter: '*', layoutMode: 'fitRows', masonry: { columnWidth: 400}});
             $('.all-click').addClass('filter-type-active');
@@ -124,6 +129,7 @@ jQuery(function ($) {
                         items:1
                     });
         }
+
             
 
         
